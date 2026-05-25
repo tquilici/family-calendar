@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "nextId": 1,
+  "nextPersonId": 1,
+  "people": [
+    { "id": "p1", "name": "Tony", "color": "#4f46e5" },
+    { "id": "p2", "name": "Trisha", "color": "#db2777" },
+    { "id": "p3", "name": "Michael", "color": "#059669" },
+    { "id": "p4", "name": "Nani", "color": "#d97706" },
+    { "id": "p5", "name": "Matthew", "color": "#0891b2" }
+  ],
+  "events": []
+}
