@@ -1271,12 +1271,13 @@ function renderAssigneePicker() {
     const bg = hexToRgba(p.color,0.12);
     return \`<button type="button" class="assignee-toggle\${sel?' selected':''}"
       style="--at-color:\${p.color};--at-bg:\${bg}"
-      onclick="toggleAssignee('\${p.id}')">
+      onclick="toggleAssignee(${typeof p.id === 'string' ? "'"+p.id+"'" : p.id})">
       <span class="at-dot" style="background:\${p.color}"></span>\${esc(p.name)}
     </button>\`;
   }).join('');
 }
 function toggleAssignee(pid) {
+  pid = typeof pid === 'string' ? (isNaN(pid) ? pid : Number(pid)) : pid;
   selectedAssignees.has(pid) ? selectedAssignees.delete(pid) : selectedAssignees.add(pid);
   renderAssigneePicker();
 }
