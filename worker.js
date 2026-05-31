@@ -1269,12 +1269,20 @@ function renderAssigneePicker() {
   wrap.innerHTML = db.people.map(p=>{
     const sel = selectedAssignees.has(p.id);
     const bg = hexToRgba(p.color,0.12);
-    return \`<button type="button" class="assignee-toggle\${sel?' selected':''}"
-      style="--at-color:\${p.color};--at-bg:\${bg}"
-      onclick="toggleAssignee(${typeof p.id === 'string' ? "'"+p.id+"'" : p.id})">
+    return \`<button type="button" class="assignee-toggle\${sel?' selected':''}" data-person-id="\${p.id}"
+      style="--at-color:\${p.color};--at-bg:\${bg}">
       <span class="at-dot" style="background:\${p.color}"></span>\${esc(p.name)}
     </button>\`;
   }).join('');
+
+  // Add click handlers to all buttons
+  wrap.querySelectorAll('.assignee-toggle').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const pid = this.getAttribute('data-person-id');
+      toggleAssignee(pid);
+    });
+  });
 }
 function toggleAssignee(pid) {
   pid = typeof pid === 'string' ? (isNaN(pid) ? pid : Number(pid)) : pid;
