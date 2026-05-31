@@ -339,6 +339,163 @@
         5
       ],
       "description": "First day of 2026-2027 school year for Michael, Nani, and Matthew"
+    },
+    {
+      "id": "evt-023",
+      "title": "wrestling Coppell Camp",
+      "date": "2026-06-01",
+      "endDate": "2026-06-04",
+      "color": "#10b981",
+      "category": "Wrestling",
+      "allDay": true,
+      "assignees": [
+        5
+      ],
+      "description": "Coppell wrestling camp (M,T,W 10:00-1:00, Th 10:00-11:30)"
+    },
+    {
+      "id": "evt-024",
+      "title": "wrestling Practice & Open Mat",
+      "date": "2026-06-09",
+      "color": "#10b981",
+      "category": "Wrestling",
+      "allDay": true,
+      "assignees": [
+        5
+      ],
+      "description": "Practice 9:00-10:00am, weights 10:10-10:45am, Open Mat 5:30-6:30pm"
+    },
+    {
+      "id": "evt-025",
+      "title": "wrestling Practice & Weights",
+      "date": "2026-06-11",
+      "color": "#10b981",
+      "category": "Wrestling",
+      "allDay": true,
+      "assignees": [
+        5
+      ],
+      "description": "Practice 9:00-10:00am, weights 10:10-10:45am"
+    },
+    {
+      "id": "evt-026",
+      "title": "wrestling Practice & Open Mat",
+      "date": "2026-06-16",
+      "color": "#10b981",
+      "category": "Wrestling",
+      "allDay": true,
+      "assignees": [
+        5
+      ],
+      "description": "Practice 9:00-10:00am, weights 10:10-10:45am, Open Mat 5:30-6:30pm"
+    },
+    {
+      "id": "evt-027",
+      "title": "wrestling Practice & Weights",
+      "date": "2026-06-18",
+      "color": "#10b981",
+      "category": "Wrestling",
+      "allDay": true,
+      "assignees": [
+        5
+      ],
+      "description": "Practice 9:00-10:00am, weights 10:10-10:45am"
+    },
+    {
+      "id": "evt-028",
+      "title": "wrestling Practice & Open Mat",
+      "date": "2026-06-23",
+      "color": "#10b981",
+      "category": "Wrestling",
+      "allDay": true,
+      "assignees": [
+        5
+      ],
+      "description": "Practice 9:00-10:00am, weights 10:10-10:45am, Open Mat 5:30-6:30pm"
+    },
+    {
+      "id": "evt-029",
+      "title": "wrestling Practice & Weights",
+      "date": "2026-06-25",
+      "color": "#10b981",
+      "category": "Wrestling",
+      "allDay": true,
+      "assignees": [
+        5
+      ],
+      "description": "Practice 9:00-10:00am, weights 10:10-10:45am"
+    },
+    {
+      "id": "evt-030",
+      "title": "wrestling Practice & Open Mat",
+      "date": "2026-07-07",
+      "color": "#10b981",
+      "category": "Wrestling",
+      "allDay": true,
+      "assignees": [
+        5
+      ],
+      "description": "Practice 9:00-10:00am, weights 10:10-10:45am, Open Mat 5:30-6:30pm"
+    },
+    {
+      "id": "evt-031",
+      "title": "wrestling Practice & Weights",
+      "date": "2026-07-09",
+      "color": "#10b981",
+      "category": "Wrestling",
+      "allDay": true,
+      "assignees": [
+        5
+      ],
+      "description": "Practice 9:00-10:00am, weights 10:10-10:45am"
+    },
+    {
+      "id": "evt-032",
+      "title": "wrestling Practice & Open Mat",
+      "date": "2026-07-14",
+      "color": "#10b981",
+      "category": "Wrestling",
+      "allDay": true,
+      "assignees": [
+        5
+      ],
+      "description": "Practice 9:00-10:00am, weights 10:10-10:45am, Open Mat 5:30-6:30pm"
+    },
+    {
+      "id": "evt-033",
+      "title": "wrestling Practice & Weights",
+      "date": "2026-07-16",
+      "color": "#10b981",
+      "category": "Wrestling",
+      "allDay": true,
+      "assignees": [
+        5
+      ],
+      "description": "Practice 9:00-10:00am, weights 10:10-10:45am"
+    },
+    {
+      "id": "evt-034",
+      "title": "wrestling Practice & Open Mat",
+      "date": "2026-07-21",
+      "color": "#10b981",
+      "category": "Wrestling",
+      "allDay": true,
+      "assignees": [
+        5
+      ],
+      "description": "Practice 9:00-10:00am, weights 10:10-10:45am, Open Mat 5:30-6:30pm"
+    },
+    {
+      "id": "evt-035",
+      "title": "wrestling Practice & Weights",
+      "date": "2026-07-23",
+      "color": "#10b981",
+      "category": "Wrestling",
+      "allDay": true,
+      "assignees": [
+        5
+      ],
+      "description": "Practice 9:00-10:00am, weights 10:10-10:45am"
     }
   ],
   "nextPersonId": 6
