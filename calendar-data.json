@@ -508,13 +508,19 @@
     {
       "id": 3,
       "created": "2026-05-31T22:03:39.855Z",
-      "title": "Europe",
+      "title": "Europe Trip",
       "desc": "",
       "date": "2026-07-28",
       "endDate": "2026-08-10",
       "allDay": true,
-      "assignees": [],
-      "updated": "2026-05-31T22:03:39.855Z"
+      "assignees": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "updated": "2026-05-31T22:04:04.858Z"
     }
   ],
   "nextPersonId": 6,
