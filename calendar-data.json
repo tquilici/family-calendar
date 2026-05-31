@@ -485,8 +485,19 @@
         5
       ],
       "description": "Practice 9:00-10:00am, weights 10:10-10:45am"
+    },
+    {
+      "id": 2,
+      "created": "2026-05-31T21:26:23.049Z",
+      "title": "Nico's Graduation",
+      "desc": "",
+      "date": "2026-06-02",
+      "endDate": "2026-06-03",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-05-31T21:26:23.049Z"
     }
   ],
   "nextPersonId": 6,
-  "nextId": 2
+  "nextId": 3
 }
