@@ -990,33 +990,30 @@ function eventsForDay(dateStr) {
 
 function matchesDate(ev, dateStr) {
   const d = dateStr;
-  if (ev.repeat === 'daily') return ev.date <= d;
+  const end = ev.endDate || ev.date;
+
+  if (ev.repeat === 'daily') return ev.date <= d && d <= end;
   if (ev.repeat === 'weekdays') {
-    if (ev.date > d) return false;
+    if (ev.date > d || d > end) return false;
     const dow = new Date(d+'T12:00:00').getDay();
     return dow >= 1 && dow <= 5;
   }
   if (ev.repeat === 'weekly') {
-    if (ev.date > d) return false;
+    if (ev.date > d || d > end) return false;
     const evDow = new Date(ev.date+'T12:00:00').getDay();
     const tDow  = new Date(d+'T12:00:00').getDay();
     return evDow === tDow;
   }
   if (ev.repeat === 'monthly') {
-    if (ev.date > d) return false;
+    if (ev.date > d || d > end) return false;
     return ev.date.slice(8) === d.slice(8);
   }
   if (ev.repeat === 'yearly') {
-    if (ev.date > d) return false;
+    if (ev.date > d || d > end) return false;
     return ev.date.slice(5) === d.slice(5);
   }
-  // Multi-day or single-day
-  const end = ev.endDate || ev.date;
-  const matches = ev.date <= d && d <= end;
-  if (ev.id === 'evt-003' && dateStr >= '2026-06-19') {
-    console.log(`evt-003 check for ${dateStr}: date=${ev.date}, end=${end}, matches=${matches}`);
-  }
-  return matches;
+  // Multi-day or single-day (no repeat)
+  return ev.date <= d && d <= end;
 }
 
 function getPersonColor(ev) {
