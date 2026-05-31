@@ -526,10 +526,11 @@
       "created": "2026-05-31T22:09:14.077Z",
       "title": "Travel Back from Malibu (evening flight)",
       "desc": "",
-      "date": "2026-05-31",
+      "date": "2026-06-04",
+      "endDate": "2026-06-04",
       "allDay": true,
       "assignees": [],
-      "updated": "2026-05-31T22:09:14.077Z"
+      "updated": "2026-05-31T22:09:28.087Z"
     }
   ],
   "nextPersonId": 6,
