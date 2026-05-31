@@ -1273,12 +1273,20 @@ function renderAssigneePicker() {
     const sel = selectedAssignees.has(p.id);
     const checkId = 'assignee_'+p.id;
     return \`<label style="display:flex;align-items:center;gap:8px;padding:6px;cursor:pointer;">
-      <input type="checkbox" id="\${checkId}" value="\${p.id}" \${sel?'checked':''}
-        onchange="toggleAssignee(\${typeof p.id === 'number' ? p.id : \"'\"+p.id+\"'\"})">
+      <input type="checkbox" class="assignee-checkbox" id="\${checkId}" value="\${p.id}" data-person-id="\${p.id}" \${sel?'checked':''}>
       <span class="at-dot" style="background:\${p.color};width:10px;height:10px;border-radius:50%;flex-shrink:0;"></span>
       <span>\${esc(p.name)}</span>
     </label>\`;
   }).join('');
+
+  // Add event listeners to checkboxes
+  document.querySelectorAll('.assignee-checkbox').forEach(cb => {
+    cb.addEventListener('change', function() {
+      const pid = parseInt(this.dataset.personId);
+      console.log('Checkbox clicked for person:', pid, 'checked:', this.checked);
+      toggleAssignee(pid);
+    });
+  });
 }
 function toggleAssignee(pid) {
   if (typeof pid === 'string') pid = isNaN(pid) ? pid : Number(pid);
