@@ -40,7 +40,8 @@
       ],
       "description": "Spanish language immersion camp, 3 weeks",
       "desc": "",
-      "updated": "2026-05-31T21:44:23.916Z"
+      "updated": "2026-05-31T21:44:23.916Z",
+      "repeat": "weekdays"
     },
     {
       "id": "evt-003",
@@ -57,7 +58,8 @@
       ],
       "description": "Family activity/vacation in Majagoria",
       "desc": "",
-      "updated": "2026-05-31T21:46:42.155Z"
+      "updated": "2026-05-31T21:46:42.155Z",
+      "repeat": "daily"
     },
     {
       "id": "evt-004",
