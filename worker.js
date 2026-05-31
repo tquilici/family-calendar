@@ -657,6 +657,7 @@ header {
       <select class="form-select" id="eRepeat">
         <option value="">Does not repeat</option>
         <option value="daily">Daily</option>
+        <option value="weekdays">Weekdays only</option>
         <option value="weekly">Weekly</option>
         <option value="monthly">Monthly</option>
         <option value="yearly">Yearly</option>
@@ -990,6 +991,11 @@ function eventsForDay(dateStr) {
 function matchesDate(ev, dateStr) {
   const d = dateStr;
   if (ev.repeat === 'daily') return ev.date <= d;
+  if (ev.repeat === 'weekdays') {
+    if (ev.date > d) return false;
+    const dow = new Date(d+'T12:00:00').getDay();
+    return dow >= 1 && dow <= 5;
+  }
   if (ev.repeat === 'weekly') {
     if (ev.date > d) return false;
     const evDow = new Date(ev.date+'T12:00:00').getDay();
