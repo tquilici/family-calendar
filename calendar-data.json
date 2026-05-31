@@ -182,18 +182,6 @@
       "description": "Michael & Matthew pick up fall 2026-27 school schedules"
     },
     {
-      "id": "evt-013",
-      "title": "🎂 Mom's 96th Birthday",
-      "date": "2026-07-30",
-      "color": "#fbbf24",
-      "category": "Birthday",
-      "allDay": true,
-      "assignees": [
-        1
-      ],
-      "description": "Tony's mom turns 96 — celebrate at home before Europe"
-    },
-    {
       "id": "evt-014",
       "title": "✈️ Depart for Europe",
       "date": "2026-07-31",
