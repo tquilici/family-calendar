@@ -1250,7 +1250,8 @@ function openEventModal(dateStr, id, defaultTime) {
   document.getElementById('eDelete').classList.toggle('hidden', !ev);
 
   toggleTimeFields();
-  selectedAssignees = new Set(ev ? (ev.assignees||[]) : (activePersonId ? [activePersonId] : []));
+  // Initialize selectedAssignees: use existing assignees or empty set
+  selectedAssignees = new Set(ev && ev.assignees ? ev.assignees : []);
   renderAssigneePicker();
   document.getElementById('eventModalOverlay').classList.remove('hidden');
   setTimeout(()=>document.getElementById('eTitle').focus(),60);
