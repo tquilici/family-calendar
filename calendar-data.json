@@ -28,19 +28,6 @@
   ],
   "events": [
     {
-      "id": "evt-001",
-      "title": "Michael SAT Prep Course",
-      "date": "2026-06-02",
-      "endDate": "2026-06-05",
-      "color": "#6366f1",
-      "category": "School",
-      "allDay": true,
-      "assignees": [
-        3
-      ],
-      "description": "4-day SAT prep course for Michael"
-    },
-    {
       "id": "evt-002",
       "title": "Nani Spanish Camp",
       "date": "2026-06-03",
@@ -497,6 +484,8 @@
       ],
       "description": "Practice 9:00-10:00am, weights 10:10-10:45am"
     }
+  }
   ],
-  "nextPersonId": 6
+  "nextPersonId": 6,
+  "nextId": 2
 }
