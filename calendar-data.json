@@ -38,7 +38,10 @@
       "assignees": [
         4
       ],
-      "description": "Spanish language immersion camp, 3 weeks"
+      "description": "Spanish language immersion camp, 3 weeks",
+      "desc": "",
+      "repeat": "weekdays",
+      "updated": "2026-05-31T21:44:23.916Z"
     },
     {
       "id": "evt-003",
@@ -53,13 +56,16 @@
         3,
         5
       ],
-      "description": "Family activity/vacation in Majagoria"
+      "description": "Family activity/vacation in Majagoria",
+      "desc": "",
+      "repeat": "daily",
+      "updated": "2026-05-31T21:46:42.155Z"
     },
     {
       "id": "evt-004",
       "title": "California Trip 🌴",
       "date": "2026-06-23",
-      "endDate": "2026-06-28",
+      "endDate": "2026-07-05",
       "color": "#f97316",
       "category": "Travel",
       "allDay": true,
@@ -70,7 +76,9 @@
         4,
         5
       ],
-      "description": "Whole family CA trip; includes Tony's birthday (Jun 27)"
+      "description": "Whole family CA trip; includes Tony's birthday (Jun 27)",
+      "desc": "",
+      "updated": "2026-05-31T21:46:08.918Z"
     },
     {
       "id": "evt-005",
