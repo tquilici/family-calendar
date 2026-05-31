@@ -338,7 +338,9 @@
       "assignees": [
         5
       ],
-      "description": "Coppell wrestling camp (M,T,W 10:00-1:00, Th 10:00-11:30)"
+      "description": "Coppell wrestling camp (M,T,W 10:00-1:00, Th 10:00-11:30)",
+      "desc": "",
+      "updated": "2026-05-31T21:18:00.110Z"
     },
     {
       "id": "evt-024",
