@@ -1012,7 +1012,11 @@ function matchesDate(ev, dateStr) {
   }
   // Multi-day or single-day
   const end = ev.endDate || ev.date;
-  return ev.date <= d && d <= end;
+  const matches = ev.date <= d && d <= end;
+  if (ev.id === 'evt-003' && dateStr >= '2026-06-19') {
+    console.log(`evt-003 check for ${dateStr}: date=${ev.date}, end=${end}, matches=${matches}`);
+  }
+  return matches;
 }
 
 function getPersonColor(ev) {
