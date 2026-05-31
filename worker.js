@@ -1266,6 +1266,7 @@ function toggleTimeFields() {
 }
 function renderAssigneePicker() {
   const wrap = document.getElementById('assigneePicker');
+  console.log('renderAssigneePicker called, selectedAssignees:', Array.from(selectedAssignees));
   if (!db.people.length) { wrap.innerHTML = '<span style="font-size:12px;color:var(--text-muted)">Add people to assign events.</span>'; return; }
 
   wrap.innerHTML = db.people.map(p=>{
@@ -1281,11 +1282,13 @@ function renderAssigneePicker() {
 }
 function toggleAssignee(pid) {
   if (typeof pid === 'string') pid = isNaN(pid) ? pid : Number(pid);
+  console.log('toggleAssignee called with:', pid, 'selectedAssignees before:', Array.from(selectedAssignees));
   if (selectedAssignees.has(pid)) {
     selectedAssignees.delete(pid);
   } else {
     selectedAssignees.add(pid);
   }
+  console.log('selectedAssignees after:', Array.from(selectedAssignees));
 }
 function saveEvent() {
   const title = document.getElementById('eTitle').value.trim();
