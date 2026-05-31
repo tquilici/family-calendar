@@ -1278,7 +1278,9 @@ function renderAssigneePicker() {
 }
 function toggleAssignee(pid) {
   pid = typeof pid === 'string' ? (isNaN(pid) ? pid : Number(pid)) : pid;
+  console.log('Before toggle:', Array.from(selectedAssignees), 'Toggling:', pid);
   selectedAssignees.has(pid) ? selectedAssignees.delete(pid) : selectedAssignees.add(pid);
+  console.log('After toggle:', Array.from(selectedAssignees));
   renderAssigneePicker();
 }
 function saveEvent() {
