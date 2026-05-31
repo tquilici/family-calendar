@@ -1268,34 +1268,24 @@ function renderAssigneePicker() {
   const wrap = document.getElementById('assigneePicker');
   if (!db.people.length) { wrap.innerHTML = '<span style="font-size:12px;color:var(--text-muted)">Add people to assign events.</span>'; return; }
 
-  console.log('renderAssigneePicker - selectedAssignees:', Array.from(selectedAssignees));
-
   wrap.innerHTML = db.people.map(p=>{
     const sel = selectedAssignees.has(p.id);
-    console.log('  Person', p.name, 'id:', p.id, 'selected:', sel);
-    const bg = hexToRgba(p.color,0.12);
-    return \`<button type="button" class="assignee-toggle\${sel?' selected':''}" data-person-id="\${p.id}"
-      style="--at-color:\${p.color};--at-bg:\${bg}">
-      <span class="at-dot" style="background:\${p.color}"></span>\${esc(p.name)}
-    </button>\`;
+    const checkId = 'assignee_'+p.id;
+    return \`<label style="display:flex;align-items:center;gap:8px;padding:6px;cursor:pointer;">
+      <input type="checkbox" id="\${checkId}" value="\${p.id}" \${sel?'checked':''}
+        onchange="toggleAssignee(\${typeof p.id === 'number' ? p.id : \"'\"+p.id+\"'\"})">
+      <span class="at-dot" style="background:\${p.color};width:10px;height:10px;border-radius:50%;flex-shrink:0;"></span>
+      <span>\${esc(p.name)}</span>
+    </label>\`;
   }).join('');
-
-  // Add click handlers to all buttons
-  wrap.querySelectorAll('.assignee-toggle').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-      e.preventDefault();
-      const pid = this.getAttribute('data-person-id');
-      console.log('Button clicked:', this.textContent.trim(), 'pid from attr:', pid, 'type:', typeof pid);
-      toggleAssignee(pid);
-    });
-  });
 }
 function toggleAssignee(pid) {
-  pid = typeof pid === 'string' ? (isNaN(pid) ? pid : Number(pid)) : pid;
-  console.log('Before toggle:', Array.from(selectedAssignees), 'Toggling:', pid);
-  selectedAssignees.has(pid) ? selectedAssignees.delete(pid) : selectedAssignees.add(pid);
-  console.log('After toggle:', Array.from(selectedAssignees));
-  renderAssigneePicker();
+  if (typeof pid === 'string') pid = isNaN(pid) ? pid : Number(pid);
+  if (selectedAssignees.has(pid)) {
+    selectedAssignees.delete(pid);
+  } else {
+    selectedAssignees.add(pid);
+  }
 }
 function saveEvent() {
   const title = document.getElementById('eTitle').value.trim();
