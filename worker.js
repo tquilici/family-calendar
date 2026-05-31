@@ -47,7 +47,7 @@ const MANIFEST = JSON.stringify({
 });
 
 const SW = `
-const CACHE = 'family-calendar-v2';
+const CACHE = 'family-calendar-v3';
 self.addEventListener('install', e => { self.skipWaiting(); });
 self.addEventListener('activate', e => {
   e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));
