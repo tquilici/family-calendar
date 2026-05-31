@@ -56,7 +56,10 @@
         3,
         5
       ],
-      "description": "Family activity/vacation in Majagoria"
+      "description": "Family activity/vacation in Majagoria",
+      "desc": "",
+      "repeat": "daily",
+      "updated": "2026-05-31T21:45:50.085Z"
     },
     {
       "id": "evt-004",
