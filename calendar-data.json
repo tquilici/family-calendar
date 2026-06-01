@@ -542,8 +542,21 @@
         3
       ],
       "updated": "2026-06-01T00:02:37.474Z"
+    },
+    {
+      "id": 6,
+      "created": "2026-06-01T00:04:51.305Z",
+      "title": "Nani - Visit Clara",
+      "desc": "",
+      "date": "2026-07-19",
+      "endDate": "2026-07-25",
+      "allDay": true,
+      "assignees": [
+        4
+      ],
+      "updated": "2026-06-01T00:04:51.305Z"
     }
   ],
   "nextPersonId": 6,
-  "nextId": 6
+  "nextId": 7
 }
