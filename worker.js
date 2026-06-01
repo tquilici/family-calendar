@@ -240,8 +240,13 @@ header {
 .main-scroll {
   flex: 1;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+}
+@media (min-width: 769px) {
+  .main-scroll {
+    overflow-x: hidden;
+  }
 }
 
 /* ── MONTH VIEW ───────────────────────────────────────────── */
@@ -250,6 +255,13 @@ header {
   grid-template-columns: repeat(7, 1fr);
   border-left: 1px solid var(--border);
   border-top: 1px solid var(--border);
+  min-width: 100%;
+}
+@media (max-width: 768px) {
+  .month-grid {
+    min-width: max-content;
+    grid-template-columns: repeat(7, minmax(100px, 1fr));
+  }
 }
 .month-dow {
   background: var(--surface);
