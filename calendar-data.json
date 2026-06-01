@@ -24,6 +24,11 @@
       "id": 5,
       "name": "Matthew",
       "color": "#10b981"
+    },
+    {
+      "id": "p6",
+      "name": "Tucker",
+      "color": "#0891b2"
     }
   ],
   "events": [
@@ -570,6 +575,6 @@
       "updated": "2026-06-01T00:07:22.037Z"
     }
   ],
-  "nextPersonId": 6,
+  "nextPersonId": 7,
   "nextId": 8
 }
