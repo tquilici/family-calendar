@@ -318,11 +318,12 @@
       "allDay": true,
       "assignees": [
         4,
-        5
+        5,
+        3
       ],
       "description": "First day of 2026-2027 school year for Michael, Nani, and Matthew",
       "desc": "",
-      "updated": "2026-05-31T22:06:28.027Z"
+      "updated": "2026-06-01T00:05:39.704Z"
     },
     {
       "id": "evt-023",
