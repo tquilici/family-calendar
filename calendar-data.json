@@ -573,8 +573,21 @@
         2
       ],
       "updated": "2026-06-01T00:07:22.037Z"
+    },
+    {
+      "id": 8,
+      "created": "2026-06-01T00:10:33.482Z",
+      "title": "Saj - Watching Tucker (7/28 - 8/11)",
+      "desc": "",
+      "date": "2026-07-28",
+      "endDate": "2026-08-11",
+      "allDay": true,
+      "assignees": [
+        null
+      ],
+      "updated": "2026-06-01T00:10:33.482Z"
     }
   ],
   "nextPersonId": 7,
-  "nextId": 8
+  "nextId": 9
 }
