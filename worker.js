@@ -1381,7 +1381,7 @@ function savePerson() {
     p.name=name; p.color=selectedColor;
     toast(name+' updated');
   } else {
-    const pid='p'+db.nextPersonId++;
+    const pid = db.nextPersonId++;
     db.people.push({id:pid,name,color:selectedColor});
     toast(name+' added','success');
   }
