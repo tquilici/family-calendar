@@ -260,7 +260,12 @@ header {
 @media (max-width: 768px) {
   .month-grid {
     min-width: max-content;
-    grid-template-columns: repeat(7, minmax(100px, 1fr));
+    grid-template-columns: repeat(7, minmax(50px, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  .month-grid {
+    grid-template-columns: repeat(7, minmax(40px, 1fr));
   }
 }
 .month-dow {
