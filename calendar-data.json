@@ -583,9 +583,10 @@
       "endDate": "2026-08-11",
       "allDay": true,
       "assignees": [
-        null
+        null,
+        5
       ],
-      "updated": "2026-06-01T00:11:18.899Z"
+      "updated": "2026-06-01T00:11:32.515Z"
     }
   ],
   "nextPersonId": 7,
