@@ -24,6 +24,11 @@
       "id": 5,
       "name": "Matthew",
       "color": "#10b981"
+    },
+    {
+      "id": "p6",
+      "name": "Tucker",
+      "color": "#0891b2"
     }
   ],
   "events": [
@@ -182,18 +187,6 @@
       "description": "Michael & Matthew pick up fall 2026-27 school schedules"
     },
     {
-      "id": "evt-013",
-      "title": "🎂 Mom's 96th Birthday",
-      "date": "2026-07-30",
-      "color": "#fbbf24",
-      "category": "Birthday",
-      "allDay": true,
-      "assignees": [
-        1
-      ],
-      "description": "Tony's mom turns 96 — celebrate at home before Europe"
-    },
-    {
       "id": "evt-014",
       "title": "✈️ Depart for Europe",
       "date": "2026-07-31",
@@ -329,11 +322,13 @@
       "category": "School",
       "allDay": true,
       "assignees": [
-        3,
         4,
-        5
+        5,
+        3
       ],
-      "description": "First day of 2026-2027 school year for Michael, Nani, and Matthew"
+      "description": "First day of 2026-2027 school year for Michael, Nani, and Matthew",
+      "desc": "",
+      "updated": "2026-06-01T00:05:39.704Z"
     },
     {
       "id": "evt-023",
@@ -499,13 +494,100 @@
       "created": "2026-05-31T21:26:23.049Z",
       "title": "Nico's Graduation",
       "desc": "",
-      "date": "2026-06-02",
+      "date": "2026-06-03",
       "endDate": "2026-06-03",
       "allDay": true,
-      "assignees": [],
-      "updated": "2026-05-31T21:26:23.049Z"
+      "assignees": [
+        1,
+        5
+      ],
+      "updated": "2026-06-01T00:01:18.326Z"
+    },
+    {
+      "id": 3,
+      "created": "2026-05-31T22:03:39.855Z",
+      "title": "Europe Trip",
+      "desc": "",
+      "date": "2026-07-28",
+      "endDate": "2026-08-10",
+      "allDay": true,
+      "assignees": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "updated": "2026-05-31T22:05:09.895Z"
+    },
+    {
+      "id": 4,
+      "created": "2026-05-31T22:08:31.166Z",
+      "title": "Travel To Malibu (Evening Flight)",
+      "desc": "",
+      "date": "2026-06-02",
+      "allDay": true,
+      "assignees": [
+        1,
+        5,
+        3
+      ],
+      "updated": "2026-06-01T00:02:26.342Z"
+    },
+    {
+      "id": 5,
+      "created": "2026-05-31T22:09:14.077Z",
+      "title": "Travel Back from Malibu (evening flight)",
+      "desc": "",
+      "date": "2026-06-04",
+      "endDate": "2026-06-04",
+      "allDay": true,
+      "assignees": [
+        1,
+        5,
+        3
+      ],
+      "updated": "2026-06-01T00:02:37.474Z"
+    },
+    {
+      "id": 6,
+      "created": "2026-06-01T00:04:51.305Z",
+      "title": "Nani - Visit Clara",
+      "desc": "",
+      "date": "2026-07-19",
+      "endDate": "2026-07-25",
+      "allDay": true,
+      "assignees": [
+        4
+      ],
+      "updated": "2026-06-01T00:04:51.305Z"
+    },
+    {
+      "id": 7,
+      "created": "2026-06-01T00:07:22.037Z",
+      "title": "Encounter Graduation",
+      "desc": "",
+      "date": "2026-06-01",
+      "allDay": true,
+      "assignees": [
+        2
+      ],
+      "updated": "2026-06-01T00:07:22.037Z"
+    },
+    {
+      "id": 8,
+      "created": "2026-06-01T00:10:33.482Z",
+      "title": "Saj - Watching Tucker (7/28 - 8/11)",
+      "desc": "",
+      "date": "2026-07-28",
+      "endDate": "2026-08-11",
+      "allDay": true,
+      "assignees": [
+        null
+      ],
+      "updated": "2026-06-01T00:14:10.745Z"
     }
   ],
-  "nextPersonId": 6,
-  "nextId": 3
+  "nextPersonId": 7,
+  "nextId": 9
 }
