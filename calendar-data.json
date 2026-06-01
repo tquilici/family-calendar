@@ -536,8 +536,12 @@
       "date": "2026-06-04",
       "endDate": "2026-06-04",
       "allDay": true,
-      "assignees": [],
-      "updated": "2026-05-31T22:09:28.087Z"
+      "assignees": [
+        1,
+        5,
+        3
+      ],
+      "updated": "2026-06-01T00:02:37.474Z"
     }
   ],
   "nextPersonId": 6,
