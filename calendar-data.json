@@ -622,8 +622,20 @@
       "allDay": true,
       "assignees": [],
       "updated": "2026-06-02T02:48:51.181Z"
+    },
+    {
+      "id": 12,
+      "created": "2026-06-02T14:20:28.331Z",
+      "title": "Dr. Erickon (9:30AM APT) 6/18",
+      "desc": "",
+      "date": "2026-06-18",
+      "allDay": true,
+      "assignees": [
+        1
+      ],
+      "updated": "2026-06-02T14:20:28.331Z"
     }
   ],
   "nextPersonId": 7,
-  "nextId": 12
+  "nextId": 13
 }
