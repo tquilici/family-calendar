@@ -50,7 +50,7 @@
     },
     {
       "id": "evt-003",
-      "title": "Trisha & Boys — Majagoria",
+      "title": "Trisha & Boys \u2014 Majagoria",
       "date": "2026-06-09",
       "endDate": "2026-06-19",
       "color": "#8b5cf6",
@@ -68,7 +68,7 @@
     },
     {
       "id": "evt-004",
-      "title": "California Trip 🌴",
+      "title": "California Trip \ud83c\udf34",
       "date": "2026-06-23",
       "endDate": "2026-07-05",
       "color": "#f97316",
@@ -123,7 +123,7 @@
     },
     {
       "id": "evt-008",
-      "title": "🎂 Tony's Birthday",
+      "title": "\ud83c\udf82 Tony's Birthday",
       "date": "2026-06-27",
       "color": "#fbbf24",
       "category": "Birthday",
@@ -131,7 +131,7 @@
       "assignees": [
         1
       ],
-      "description": "Tony's birthday — visit Mom in CA"
+      "description": "Tony's birthday \u2014 visit Mom in CA"
     },
     {
       "id": "evt-009",
@@ -148,7 +148,7 @@
     },
     {
       "id": "evt-010",
-      "title": "Nani — Dr. Fuller",
+      "title": "Nani \u2014 Dr. Fuller",
       "date": "2026-07-15",
       "color": "#06b6d4",
       "category": "Medical",
@@ -160,7 +160,7 @@
     },
     {
       "id": "evt-011",
-      "title": "Boys Ski Camp ⛷️ Colorado",
+      "title": "Boys Ski Camp \u26f7\ufe0f Colorado",
       "date": "2026-07-19",
       "endDate": "2026-07-25",
       "color": "#3b82f6",
@@ -188,7 +188,7 @@
     },
     {
       "id": "evt-014",
-      "title": "✈️ Depart for Europe",
+      "title": "\u2708\ufe0f Depart for Europe",
       "date": "2026-07-31",
       "color": "#ef4444",
       "category": "Europe Trip",
@@ -200,11 +200,11 @@
         4,
         5
       ],
-      "description": "Fly DAL → Rome (FCO). Rome first, fly home from Munich."
+      "description": "Fly DAL \u2192 Rome (FCO). Rome first, fly home from Munich."
     },
     {
       "id": "evt-015",
-      "title": "🇮🇹 Rome — Vatican & Colosseum",
+      "title": "\ud83c\uddee\ud83c\uddf9 Rome \u2014 Vatican & Colosseum",
       "date": "2026-07-31",
       "endDate": "2026-08-01",
       "color": "#ef4444",
@@ -221,7 +221,7 @@
     },
     {
       "id": "evt-016",
-      "title": "🚂 Rome → Verona → Innsbruck",
+      "title": "\ud83d\ude82 Rome \u2192 Verona \u2192 Innsbruck",
       "date": "2026-08-02",
       "color": "#ef4444",
       "category": "Europe Trip",
@@ -237,7 +237,7 @@
     },
     {
       "id": "evt-017",
-      "title": "🏔️ Sonthofen — Ralf + Neuschwanstein",
+      "title": "\ud83c\udfd4\ufe0f Sonthofen \u2014 Ralf + Neuschwanstein",
       "date": "2026-08-02",
       "endDate": "2026-08-04",
       "color": "#ef4444",
@@ -254,7 +254,7 @@
     },
     {
       "id": "evt-018",
-      "title": "🌲 Waldkirch — Family Relatives",
+      "title": "\ud83c\udf32 Waldkirch \u2014 Family Relatives",
       "date": "2026-08-05",
       "endDate": "2026-08-07",
       "color": "#ef4444",
@@ -271,7 +271,7 @@
     },
     {
       "id": "evt-019",
-      "title": "🍺 Munich — Beer Gardens",
+      "title": "\ud83c\udf7a Munich \u2014 Beer Gardens",
       "date": "2026-08-08",
       "endDate": "2026-08-09",
       "color": "#ef4444",
@@ -288,7 +288,7 @@
     },
     {
       "id": "evt-020",
-      "title": "✈️ Fly Home Munich → Dallas",
+      "title": "\u2708\ufe0f Fly Home Munich \u2192 Dallas",
       "date": "2026-08-10",
       "color": "#ef4444",
       "category": "Europe Trip",
@@ -300,7 +300,7 @@
         4,
         5
       ],
-      "description": "Fly MUC → DAL. Return home from Europe trip."
+      "description": "Fly MUC \u2192 DAL. Return home from Europe trip."
     },
     {
       "id": "evt-021",
@@ -316,7 +316,7 @@
     },
     {
       "id": "evt-022",
-      "title": "🏫 School Starts",
+      "title": "\ud83c\udfeb School Starts",
       "date": "2026-08-12",
       "color": "#6366f1",
       "category": "School",
@@ -612,6 +612,21 @@
         3
       ],
       "updated": "2026-06-01T00:38:47.818Z"
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Wrestling Tournament",
+      "description": "Coppell wrestling tournament"
+    },
+    {
+      "date": "2026-06-06",
+      "title": "SAT Prep Class",
+      "description": "Morning study session"
+    },
+    {
+      "date": "2026-06-07",
+      "title": "Family Dinner",
+      "description": "Weekend gathering"
     }
   ],
   "nextPersonId": 7,
