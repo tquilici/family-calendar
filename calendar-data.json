@@ -644,8 +644,18 @@
       "allDay": true,
       "assignees": [],
       "updated": "2026-06-03T16:05:35.156Z"
+    },
+    {
+      "id": 14,
+      "created": "2026-06-03T16:07:03.584Z",
+      "title": "Dinner at Trisha's Friends house",
+      "desc": "",
+      "date": "2026-06-06",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-06-03T16:07:03.584Z"
     }
   ],
   "nextPersonId": 7,
-  "nextId": 14
+  "nextId": 15
 }
