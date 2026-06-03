@@ -634,8 +634,18 @@
         1
       ],
       "updated": "2026-06-02T14:20:28.331Z"
+    },
+    {
+      "id": 13,
+      "created": "2026-06-03T16:05:35.156Z",
+      "title": "Trisha - Attending surprise party Sat afternoon.",
+      "desc": "",
+      "date": "2026-06-06",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-06-03T16:05:35.156Z"
     }
   ],
   "nextPersonId": 7,
-  "nextId": 13
+  "nextId": 14
 }
