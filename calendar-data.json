@@ -666,8 +666,18 @@
         1
       ],
       "updated": "2026-06-08T22:25:40.541Z"
+    },
+    {
+      "id": 16,
+      "created": "2026-06-15T17:52:19.271Z",
+      "title": "Drop of BMW at floyd's shops",
+      "desc": "",
+      "date": "2026-06-23",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-06-15T17:52:19.271Z"
     }
   ],
   "nextPersonId": 7,
-  "nextId": 16
+  "nextId": 17
 }
