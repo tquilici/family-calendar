@@ -670,8 +670,21 @@
       "allDay": true,
       "assignees": [],
       "updated": "2026-06-15T17:53:28.617Z"
+    },
+    {
+      "id": 18,
+      "created": "2026-06-19T16:56:01.863Z",
+      "title": "Clara Visit",
+      "desc": "",
+      "date": "2026-06-11",
+      "endDate": "2026-06-19",
+      "allDay": true,
+      "assignees": [
+        4
+      ],
+      "updated": "2026-06-19T16:56:01.862Z"
     }
   ],
   "nextPersonId": 7,
-  "nextId": 18
+  "nextId": 19
 }
