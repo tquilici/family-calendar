@@ -53,8 +53,8 @@
     {
       "id": "evt-004",
       "title": "California Trip 🌴",
-      "date": "2026-06-23",
-      "endDate": "2026-07-05",
+      "date": "2026-06-19",
+      "endDate": "2026-07-04",
       "color": "#f97316",
       "category": "Travel",
       "allDay": true,
@@ -67,7 +67,7 @@
       ],
       "description": "Whole family CA trip; includes Tony's birthday (Jun 27)",
       "desc": "",
-      "updated": "2026-05-31T21:46:08.918Z"
+      "updated": "2026-06-19T16:56:35.552Z"
     },
     {
       "id": "evt-005",
