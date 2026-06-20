@@ -449,6 +449,9 @@ header {
   z-index: 2;
   line-height: 1.4;
 }
+.day-event.historical, .week-event.historical, .day-event-pill.historical {
+  opacity: 0.35;
+}
 .current-time-line {
   position: absolute;
   left: 0; right: 0;
@@ -1046,11 +1049,11 @@ function isHistoricalEvent(ev) {
 }
 
 function getEventColor(ev) {
-  const color = getEventColor(ev);
-  if (isHistoricalEvent(ev)) {
-    return color + '4d';
-  }
-  return color;
+  return getPersonColor(ev);
+}
+
+function getEventClass(ev) {
+  return isHistoricalEvent(ev) ? 'historical' : '';
 }
 
 // ── CALENDAR RENDER ─────────────────────────────────────────────────────────
@@ -1114,8 +1117,9 @@ function monthDayEvents(ds) {
   let html = '';
   evs.slice(0,MAX).forEach(ev=>{
     const col = getEventColor(ev);
+    const cls = getEventClass(ev);
     const title = esc(ev.title);
-    html += \`<div class="day-event-pill" style="background:\${col}" onclick="event.stopPropagation();openEventModal('\${ds}','\${ev.id}')" title="\${title}">\${title}</div>\`;
+    html += \`<div class="day-event-pill \${cls}" style="background:\${col}" onclick="event.stopPropagation();openEventModal('\${ds}','\${ev.id}')" title="\${title}">\${title}</div>\`;
   });
   if (evs.length>MAX) html += \`<div class="day-more">+\${evs.length-MAX} more</div>\`;
   return html;
@@ -1163,7 +1167,8 @@ function renderWeek(container) {
     html += \`<div class="week-allday-cell">\`;
     allevs.forEach(ev=>{
       const col = getEventColor(ev);
-      html += \`<div class="day-event-pill" style="background:\${col};font-size:10px" onclick="openEventModal('\${ds}','\${ev.id}')">\${esc(ev.title)}</div>\`;
+      const cls = getEventClass(ev);
+      html += \`<div class="day-event-pill \${cls}" style="background:\${col};font-size:10px" onclick="openEventModal('\${ds}','\${ev.id}')">\${esc(ev.title)}</div>\`;
     });
     html += '</div>';
   });
@@ -1186,7 +1191,8 @@ function renderWeek(container) {
           const top = (em/60)*48;
           const height = (durMins/60)*48;
           const col = getEventColor(ev);
-          html += \`<div class="week-event" style="background:\${col};top:\${top}px;height:\${height}px" onclick="event.stopPropagation();openEventModal('\${ds}','\${ev.id}')">\${esc(ev.title)}</div>\`;
+          const cls = getEventClass(ev);
+          html += \`<div class="week-event \${cls}" style="background:\${col};top:\${top}px;height:\${height}px" onclick="event.stopPropagation();openEventModal('\${ds}','\${ev.id}')">\${esc(ev.title)}</div>\`;
         }
       });
       html += '</div>';
@@ -1225,7 +1231,8 @@ function renderDay(container) {
     html += '<div class="day-header-allday"><div class="day-allday-label">All day</div>';
     allDayEvs.forEach(ev=>{
       const col = getEventColor(ev);
-      html += \`<div class="day-event-pill" style="background:\${col};font-size:12px;padding:4px 8px" onclick="openEventModal('\${ds}','\${ev.id}')">\${esc(ev.title)}</div>\`;
+      const cls = getEventClass(ev);
+      html += \`<div class="day-event-pill \${cls}" style="background:\${col};font-size:12px;padding:4px 8px" onclick="openEventModal('\${ds}','\${ev.id}')">\${esc(ev.title)}</div>\`;
     });
     html += '</div>';
   }
@@ -1243,7 +1250,8 @@ function renderDay(container) {
         const top = (em/60)*56;
         const height = (durMins/60)*56;
         const col = getEventColor(ev);
-        html += \`<div class="day-event" style="background:\${col};top:\${top}px;height:\${height}px" onclick="event.stopPropagation();openEventModal('\${ds}','\${ev.id}')">\${esc(ev.title)}<br><span style="font-size:10px;opacity:0.85">\${ev.startTime}\${ev.endTime?' – '+ev.endTime:''}</span></div>\`;
+        const cls = getEventClass(ev);
+        html += \`<div class="day-event \${cls}" style="background:\${col};top:\${top}px;height:\${height}px" onclick="event.stopPropagation();openEventModal('\${ds}','\${ev.id}')">\${esc(ev.title)}<br><span style="font-size:10px;opacity:0.85">\${ev.startTime}\${ev.endTime?' – '+ev.endTime:''}</span></div>\`;
       }
     });
     // Current time line (today only)
