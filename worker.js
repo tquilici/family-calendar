@@ -450,13 +450,9 @@ header {
   line-height: 1.4;
 }
 .day-event.historical, .week-event.historical, .day-event-pill.historical {
-  filter: brightness(0.5) saturate(0.6);
-  text-shadow:
-    0 0 2px rgba(255,255,255,0.9),
-    0 0 4px rgba(255,255,255,0.8),
-    0 1px 2px rgba(0,0,0,0.9);
-  font-weight: 700;
-  letter-spacing: 0.2px;
+  mix-blend-mode: multiply;
+  color: #ffffff !important;
+  font-weight: 600;
 }
 .current-time-line {
   position: absolute;
