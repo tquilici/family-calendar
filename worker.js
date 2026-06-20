@@ -1036,7 +1036,7 @@ function matchesDate(ev, dateStr) {
   return ev.date <= d && d <= end;
 }
 
-function getEventColor(ev) {
+function getPersonColor(ev) {
   if (!ev.assignees || !ev.assignees.length) return '#4f46e5';
   const p = db.people.find(p=>p.id===ev.assignees[0]);
   return p ? p.color : '#4f46e5';
