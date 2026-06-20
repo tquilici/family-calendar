@@ -33,22 +33,6 @@
   ],
   "events": [
     {
-      "id": "evt-002",
-      "title": "Nani Spanish Camp",
-      "date": "2026-06-03",
-      "endDate": "2026-06-23",
-      "color": "#ec4899",
-      "category": "Camp",
-      "allDay": true,
-      "assignees": [
-        4
-      ],
-      "description": "Spanish language immersion camp, 3 weeks",
-      "desc": "",
-      "updated": "2026-05-31T21:44:23.916Z",
-      "repeat": "weekdays"
-    },
-    {
       "id": "evt-003",
       "title": "Trisha & Boys — Majagoria",
       "date": "2026-06-09",
@@ -69,8 +53,8 @@
     {
       "id": "evt-004",
       "title": "California Trip 🌴",
-      "date": "2026-06-23",
-      "endDate": "2026-07-05",
+      "date": "2026-06-21",
+      "endDate": "2026-07-03",
       "color": "#f97316",
       "category": "Travel",
       "allDay": true,
@@ -83,7 +67,7 @@
       ],
       "description": "Whole family CA trip; includes Tony's birthday (Jun 27)",
       "desc": "",
-      "updated": "2026-05-31T21:46:08.918Z"
+      "updated": "2026-06-20T14:29:18.416Z"
     },
     {
       "id": "evt-005",
@@ -567,12 +551,12 @@
       "created": "2026-06-01T00:07:22.037Z",
       "title": "Encounter Graduation",
       "desc": "",
-      "date": "2026-06-01",
+      "date": "2026-06-08",
       "allDay": true,
       "assignees": [
         2
       ],
-      "updated": "2026-06-01T00:07:22.037Z"
+      "updated": "2026-06-02T15:13:09.062Z"
     },
     {
       "id": 8,
@@ -612,8 +596,96 @@
         3
       ],
       "updated": "2026-06-01T00:38:47.818Z"
+    },
+    {
+      "id": 11,
+      "created": "2026-06-02T02:48:41.384Z",
+      "title": "Michael SAT",
+      "desc": "",
+      "date": "2026-06-06",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-06-07T16:29:15.969Z"
+    },
+    {
+      "id": 12,
+      "created": "2026-06-02T14:20:28.331Z",
+      "title": "Dr. Erickon (9:30AM APT) 6/18",
+      "desc": "",
+      "date": "2026-06-18",
+      "allDay": true,
+      "assignees": [
+        1
+      ],
+      "updated": "2026-06-02T14:20:28.331Z"
+    },
+    {
+      "id": 13,
+      "created": "2026-06-03T16:05:35.156Z",
+      "title": "Trisha - Attending surprise party Sat afternoon.",
+      "desc": "",
+      "date": "2026-06-06",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-06-03T16:05:35.156Z"
+    },
+    {
+      "id": 14,
+      "created": "2026-06-03T16:07:03.584Z",
+      "title": "Dinner at Trisha's Friends house",
+      "desc": "",
+      "date": "2026-06-06",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-06-03T16:07:03.584Z"
+    },
+    {
+      "id": 15,
+      "created": "2026-06-08T22:25:40.541Z",
+      "title": "Tony - Doctor Buch Appointment (9:30AM) 8/20.",
+      "desc": "",
+      "date": "2026-08-20",
+      "allDay": true,
+      "assignees": [
+        1
+      ],
+      "updated": "2026-06-08T22:25:40.541Z"
+    },
+    {
+      "id": 16,
+      "created": "2026-06-15T17:52:19.271Z",
+      "title": "Drop of BMW at floyd's shops",
+      "desc": "",
+      "date": "2026-06-23",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-06-15T17:52:19.271Z"
+    },
+    {
+      "id": 17,
+      "created": "2026-06-15T17:53:28.617Z",
+      "title": "Nani/Tony CA",
+      "desc": "",
+      "date": "2026-06-21",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-06-20T14:29:08.774Z",
+      "endDate": "2026-06-22"
+    },
+    {
+      "id": 18,
+      "created": "2026-06-19T16:56:01.863Z",
+      "title": "Clara Visit",
+      "desc": "",
+      "date": "2026-06-11",
+      "endDate": "2026-06-19",
+      "allDay": true,
+      "assignees": [
+        4
+      ],
+      "updated": "2026-06-19T16:56:01.862Z"
     }
   ],
   "nextPersonId": 7,
-  "nextId": 11
+  "nextId": 19
 }
