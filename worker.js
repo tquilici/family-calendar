@@ -449,11 +449,6 @@ header {
   z-index: 2;
   line-height: 1.4;
 }
-.day-event.historical, .week-event.historical, .day-event-pill.historical {
-  mix-blend-mode: multiply;
-  color: #ffffff !important;
-  font-weight: 600;
-}
 .current-time-line {
   position: absolute;
   left: 0; right: 0;
@@ -1050,8 +1045,17 @@ function isHistoricalEvent(ev) {
   return endDate < today;
 }
 
+function muteColor(hex) {
+  const r = parseInt(hex.slice(1,3), 16);
+  const g = parseInt(hex.slice(3,5), 16);
+  const b = parseInt(hex.slice(5,7), 16);
+  const muted = Math.round(r*0.5 + 30) + (Math.round(g*0.5 + 30) << 8) + (Math.round(b*0.5 + 30) << 16);
+  return '#' + ('00000' + muted.toString(16)).slice(-6);
+}
+
 function getEventColor(ev) {
-  return getPersonColor(ev);
+  const color = getPersonColor(ev);
+  return isHistoricalEvent(ev) ? muteColor(color) : color;
 }
 
 function getEventClass(ev) {
