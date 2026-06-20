@@ -664,12 +664,13 @@
     {
       "id": 17,
       "created": "2026-06-15T17:53:28.617Z",
-      "title": "Nani/Tony Cs",
+      "title": "Nani/Tony CA",
       "desc": "",
-      "date": "2026-06-19",
+      "date": "2026-06-21",
       "allDay": true,
       "assignees": [],
-      "updated": "2026-06-15T17:53:28.617Z"
+      "updated": "2026-06-20T14:29:08.774Z",
+      "endDate": "2026-06-22"
     },
     {
       "id": 18,
