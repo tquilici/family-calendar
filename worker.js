@@ -450,7 +450,7 @@ header {
   line-height: 1.4;
 }
 .day-event.historical, .week-event.historical, .day-event-pill.historical {
-  opacity: 0.35;
+  filter: brightness(0.5) saturate(0.6);
 }
 .current-time-line {
   position: absolute;
