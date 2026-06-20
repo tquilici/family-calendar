@@ -451,8 +451,12 @@ header {
 }
 .day-event.historical, .week-event.historical, .day-event-pill.historical {
   filter: brightness(0.5) saturate(0.6);
-  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
-  font-weight: 600;
+  text-shadow:
+    0 0 2px rgba(255,255,255,0.9),
+    0 0 4px rgba(255,255,255,0.8),
+    0 1px 2px rgba(0,0,0,0.9);
+  font-weight: 700;
+  letter-spacing: 0.2px;
 }
 .current-time-line {
   position: absolute;
