@@ -715,8 +715,11 @@
       "desc": "",
       "date": "2026-08-11",
       "allDay": true,
-      "assignees": [],
-      "updated": "2026-07-22T19:06:01.706Z"
+      "assignees": [
+        3,
+        1
+      ],
+      "updated": "2026-07-22T19:06:13.150Z"
     }
   ],
   "nextPersonId": 7,
