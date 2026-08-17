@@ -829,8 +829,10 @@
       "date": "2026-11-03",
       "endDate": "2026-11-03",
       "allDay": true,
-      "assignees": [],
-      "updated": "2026-08-17T12:09:25.404Z"
+      "assignees": [
+        7
+      ],
+      "updated": "2026-08-17T12:10:19.663Z"
     },
     {
       "id": 30,
