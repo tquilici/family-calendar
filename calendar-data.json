@@ -738,8 +738,20 @@
         4
       ],
       "updated": "2026-08-17T11:58:14.725Z"
+    },
+    {
+      "id": 23,
+      "created": "2026-08-17T12:00:07.142Z",
+      "title": "Nani - No School 10/12",
+      "desc": "",
+      "date": "2026-08-17",
+      "allDay": true,
+      "assignees": [
+        7
+      ],
+      "updated": "2026-08-17T12:00:07.142Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 23
+  "nextId": 24
 }
