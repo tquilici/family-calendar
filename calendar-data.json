@@ -759,13 +759,15 @@
       "title": "Nani - No School 11-23 to 11-27 (Thanksgiving)",
       "desc": "",
       "date": "2026-11-23",
-      "allDay": true,
-      "repeat": "daily",
+      "allDay": false,
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "repeat": "weekdays",
       "assignees": [
         7,
         4
       ],
-      "updated": "2026-08-17T12:03:22.865Z"
+      "updated": "2026-08-17T12:04:16.361Z"
     }
   ],
   "nextPersonId": 8,
