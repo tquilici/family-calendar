@@ -972,8 +972,11 @@
       "desc": "",
       "date": "2027-05-28",
       "allDay": true,
-      "assignees": [],
-      "updated": "2026-08-17T12:25:23.290Z"
+      "assignees": [
+        4,
+        7
+      ],
+      "updated": "2026-08-17T12:47:26.341Z"
     },
     {
       "id": 41,
