@@ -784,8 +784,23 @@
         5
       ],
       "updated": "2026-08-17T12:05:23.599Z"
+    },
+    {
+      "id": 26,
+      "created": "2026-08-17T12:06:18.113Z",
+      "title": "Michael/Matthew - No School (9/18) Staff workday",
+      "desc": "",
+      "date": "2026-09-18",
+      "endDate": "2026-09-18",
+      "allDay": true,
+      "assignees": [
+        7,
+        3,
+        5
+      ],
+      "updated": "2026-08-17T12:06:18.113Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 26
+  "nextId": 27
 }
