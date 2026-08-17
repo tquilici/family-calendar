@@ -801,20 +801,6 @@
       "updated": "2026-08-17T12:36:21.482Z"
     },
     {
-      "id": 27,
-      "created": "2026-08-17T12:06:38.001Z",
-      "title": "Michael/Matthew no School",
-      "desc": "",
-      "date": "2026-09-07",
-      "allDay": true,
-      "assignees": [
-        3,
-        5,
-        7
-      ],
-      "updated": "2026-08-17T12:39:33.285Z"
-    },
-    {
       "id": 28,
       "created": "2026-08-17T12:07:32.032Z",
       "title": "Michael/Matthew - No School (Columbus Day)",
@@ -1100,7 +1086,7 @@
         5,
         7
       ],
-      "updated": "2026-08-17T12:36:15.014Z"
+      "updated": "2026-08-17T12:39:41.192Z"
     }
   ],
   "nextPersonId": 8,
