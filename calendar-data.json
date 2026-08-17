@@ -1029,8 +1029,22 @@
         5
       ],
       "updated": "2026-08-17T12:28:39.897Z"
+    },
+    {
+      "id": 45,
+      "created": "2026-08-17T12:29:33.643Z",
+      "title": "Michael/Matthew No school (Bad Weather day)",
+      "desc": "",
+      "date": "2027-04-23",
+      "allDay": true,
+      "assignees": [
+        3,
+        5,
+        4
+      ],
+      "updated": "2026-08-17T12:29:33.643Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 45
+  "nextId": 46
 }
