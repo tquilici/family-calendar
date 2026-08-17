@@ -752,8 +752,21 @@
         4
       ],
       "updated": "2026-08-17T12:01:14.416Z"
+    },
+    {
+      "id": 24,
+      "created": "2026-08-17T12:02:43.779Z",
+      "title": "Nani - No School 11-23 to 11-27 (Thanksgiving)",
+      "desc": "",
+      "date": "2026-11-23",
+      "allDay": true,
+      "assignees": [
+        7,
+        4
+      ],
+      "updated": "2026-08-17T12:02:43.779Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 24
+  "nextId": 25
 }
