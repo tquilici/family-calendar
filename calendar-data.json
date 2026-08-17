@@ -748,9 +748,10 @@
       "date": "2026-10-12",
       "allDay": true,
       "assignees": [
-        7
+        7,
+        4
       ],
-      "updated": "2026-08-17T12:00:46.385Z"
+      "updated": "2026-08-17T12:01:14.416Z"
     }
   ],
   "nextPersonId": 8,
