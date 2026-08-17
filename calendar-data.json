@@ -858,8 +858,19 @@
       "allDay": true,
       "assignees": [],
       "updated": "2026-08-17T12:11:30.958Z"
+    },
+    {
+      "id": 32,
+      "created": "2026-08-17T12:12:15.029Z",
+      "title": "Nani - Xmas Break",
+      "desc": "",
+      "date": "2026-12-19",
+      "endDate": "2027-01-04",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-08-17T12:12:15.029Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 32
+  "nextId": 33
 }
