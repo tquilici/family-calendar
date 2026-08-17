@@ -39,11 +39,6 @@
       "id": 8,
       "name": "Flights",
       "color": "#dc2626"
-    },
-    {
-      "id": 9,
-      "name": "DAL->SJC 7:05PM",
-      "color": "#65a30d"
     }
   ],
   "events": [
