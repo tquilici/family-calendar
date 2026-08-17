@@ -1227,10 +1227,11 @@
       "date": "2026-10-11",
       "allDay": true,
       "assignees": [
+        8,
         1,
-        8
+        3
       ],
-      "updated": "2026-08-17T14:20:40.126Z"
+      "updated": "2026-08-17T14:31:47.137Z"
     }
   ],
   "nextPersonId": 10,
