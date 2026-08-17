@@ -1154,8 +1154,14 @@
       "date": "2026-11-13",
       "endDate": "2026-11-13",
       "allDay": true,
-      "assignees": [],
-      "updated": "2026-08-17T14:05:50.516Z"
+      "assignees": [
+        7,
+        4,
+        3,
+        1,
+        5
+      ],
+      "updated": "2026-08-17T14:06:08.982Z"
     }
   ],
   "nextPersonId": 8,
