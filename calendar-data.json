@@ -994,8 +994,18 @@
         4
       ],
       "updated": "2026-08-17T12:26:00.550Z"
+    },
+    {
+      "id": 42,
+      "created": "2026-08-17T12:26:46.992Z",
+      "title": "Michael/Matthew - Bad Weather Day",
+      "desc": "",
+      "date": "2027-02-15",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-08-17T12:26:46.992Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 42
+  "nextId": 43
 }
