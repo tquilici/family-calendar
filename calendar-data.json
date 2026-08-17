@@ -970,8 +970,18 @@
       "allDay": true,
       "assignees": [],
       "updated": "2026-08-17T12:23:15.258Z"
+    },
+    {
+      "id": 40,
+      "created": "2026-08-17T12:24:11.230Z",
+      "title": "Nani - No School Memorial Day",
+      "desc": "",
+      "date": "2027-05-31",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-08-17T12:24:11.230Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 40
+  "nextId": 41
 }
