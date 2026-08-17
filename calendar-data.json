@@ -1218,8 +1218,21 @@
         8
       ],
       "updated": "2026-08-17T14:19:19.246Z"
+    },
+    {
+      "id": 63,
+      "created": "2026-08-17T14:20:24.390Z",
+      "title": "San Jose -> Dallas (3:45)",
+      "desc": "",
+      "date": "2026-08-17",
+      "allDay": true,
+      "assignees": [
+        1,
+        8
+      ],
+      "updated": "2026-08-17T14:20:24.390Z"
     }
   ],
   "nextPersonId": 10,
-  "nextId": 63
+  "nextId": 64
 }
