@@ -1147,19 +1147,6 @@
       "updated": "2026-08-17T14:00:11.725Z"
     },
     {
-      "id": 57,
-      "created": "2026-08-17T14:05:11.172Z",
-      "title": "Tony. Dr Westover (9:40PM)",
-      "desc": "",
-      "date": "2026-11-13",
-      "endDate": "2026-11-13",
-      "allDay": true,
-      "assignees": [
-        1
-      ],
-      "updated": "2026-08-17T14:06:56.774Z"
-    },
-    {
       "id": 58,
       "created": "2026-08-17T14:07:34.437Z",
       "title": "Dr Westover Appt",
