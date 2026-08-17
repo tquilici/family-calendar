@@ -760,11 +760,12 @@
       "desc": "",
       "date": "2026-11-23",
       "allDay": true,
+      "repeat": "daily",
       "assignees": [
         7,
         4
       ],
-      "updated": "2026-08-17T12:02:43.779Z"
+      "updated": "2026-08-17T12:03:01.727Z"
     }
   ],
   "nextPersonId": 8,
