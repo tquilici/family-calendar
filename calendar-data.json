@@ -1053,8 +1053,22 @@
       "allDay": true,
       "assignees": [],
       "updated": "2026-08-17T12:30:48.679Z"
+    },
+    {
+      "id": 47,
+      "created": "2026-08-17T12:32:04.068Z",
+      "title": "Michael/Matthew No School (Holiday)",
+      "desc": "",
+      "date": "2026-08-17",
+      "allDay": true,
+      "assignees": [
+        3,
+        5,
+        7
+      ],
+      "updated": "2026-08-17T12:32:04.068Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 47
+  "nextId": 48
 }
