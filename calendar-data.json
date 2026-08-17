@@ -1117,8 +1117,21 @@
         7
       ],
       "updated": "2026-08-17T12:45:07.247Z"
+    },
+    {
+      "id": 53,
+      "created": "2026-08-17T12:46:45.002Z",
+      "title": "Nani No School (4/23)",
+      "desc": "",
+      "date": "2027-04-23",
+      "allDay": true,
+      "assignees": [
+        4,
+        7
+      ],
+      "updated": "2026-08-17T12:46:45.002Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 53
+  "nextId": 54
 }
