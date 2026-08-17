@@ -921,8 +921,22 @@
         7
       ],
       "updated": "2026-08-17T12:19:24.431Z"
+    },
+    {
+      "id": 36,
+      "created": "2026-08-17T12:20:47.230Z",
+      "title": "No School Nani (Easter Holiday)",
+      "desc": "",
+      "date": "2027-03-26",
+      "endDate": "2027-03-29",
+      "allDay": true,
+      "assignees": [
+        4,
+        7
+      ],
+      "updated": "2026-08-17T12:20:47.230Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 36
+  "nextId": 37
 }
