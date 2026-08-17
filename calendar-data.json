@@ -945,8 +945,11 @@
       "date": "2027-03-15",
       "endDate": "2027-03-19",
       "allDay": true,
-      "assignees": [],
-      "updated": "2026-08-17T12:21:44.259Z"
+      "assignees": [
+        4,
+        7
+      ],
+      "updated": "2026-08-17T12:21:51.177Z"
     }
   ],
   "nextPersonId": 8,
