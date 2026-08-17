@@ -867,8 +867,12 @@
       "date": "2026-12-19",
       "endDate": "2027-01-04",
       "allDay": true,
-      "assignees": [],
-      "updated": "2026-08-17T12:12:15.029Z"
+      "assignees": [
+        3,
+        5,
+        4
+      ],
+      "updated": "2026-08-17T12:12:24.237Z"
     }
   ],
   "nextPersonId": 8,
