@@ -1100,8 +1100,23 @@
         7
       ],
       "updated": "2026-08-17T12:43:45.635Z"
+    },
+    {
+      "id": 52,
+      "created": "2026-08-17T12:45:07.247Z",
+      "title": "Michael/Matthew - Thanksgiving Holiday - 10/23 to 10/27",
+      "desc": "",
+      "date": "2026-11-23",
+      "endDate": "2026-11-27",
+      "allDay": true,
+      "assignees": [
+        3,
+        5,
+        7
+      ],
+      "updated": "2026-08-17T12:45:07.247Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 52
+  "nextId": 53
 }
