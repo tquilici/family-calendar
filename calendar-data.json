@@ -820,8 +820,19 @@
       "allDay": true,
       "assignees": [],
       "updated": "2026-08-17T12:08:32.167Z"
+    },
+    {
+      "id": 29,
+      "created": "2026-08-17T12:09:25.404Z",
+      "title": "Michael/Matthew (no school) 11/3 - Staff workday",
+      "desc": "",
+      "date": "2026-11-03",
+      "endDate": "2026-11-03",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-08-17T12:09:25.404Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 29
+  "nextId": 30
 }
