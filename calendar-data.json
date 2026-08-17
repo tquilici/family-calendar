@@ -769,8 +769,23 @@
         4
       ],
       "updated": "2026-08-17T12:04:40.668Z"
+    },
+    {
+      "id": 25,
+      "created": "2026-08-17T12:05:23.599Z",
+      "title": "Michael/Matthew - No Schedule (Staff workday)",
+      "desc": "",
+      "date": "2026-10-08",
+      "endDate": "2026-10-09",
+      "allDay": true,
+      "assignees": [
+        7,
+        3,
+        5
+      ],
+      "updated": "2026-08-17T12:05:23.599Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 25
+  "nextId": 26
 }
