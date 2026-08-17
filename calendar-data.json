@@ -725,8 +725,19 @@
         1
       ],
       "updated": "2026-07-22T19:06:13.150Z"
+    },
+    {
+      "id": 22,
+      "created": "2026-08-17T11:58:05.154Z",
+      "title": "Nani No School - 9/7 Labor Day",
+      "desc": "",
+      "date": "2026-09-07",
+      "endDate": "2026-09-07",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-08-17T11:58:05.154Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 22
+  "nextId": 23
 }
