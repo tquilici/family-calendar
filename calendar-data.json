@@ -1093,8 +1093,18 @@
         7
       ],
       "updated": "2026-08-17T12:36:15.014Z"
+    },
+    {
+      "id": 50,
+      "created": "2026-08-17T12:38:09.211Z",
+      "title": "Michael/Matthew No School (10/12)",
+      "desc": "",
+      "date": "2026-10-12",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-08-17T12:38:09.211Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 50
+  "nextId": 51
 }
