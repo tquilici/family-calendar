@@ -893,8 +893,22 @@
         7
       ],
       "updated": "2026-08-17T12:14:11.788Z"
+    },
+    {
+      "id": 34,
+      "created": "2026-08-17T12:18:18.268Z",
+      "title": "Nani - No School (Martin Luther King Day)",
+      "desc": "",
+      "date": "2027-01-18",
+      "allDay": true,
+      "assignees": [
+        3,
+        4,
+        5
+      ],
+      "updated": "2026-08-17T12:18:18.268Z"
     }
   ],
   "nextPersonId": 8,
-  "nextId": 34
+  "nextId": 35
 }
