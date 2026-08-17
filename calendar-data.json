@@ -29,6 +29,11 @@
       "id": 6,
       "name": "Tucker",
       "color": "#0891b2"
+    },
+    {
+      "id": 7,
+      "name": "No School",
+      "color": "#db2777"
     }
   ],
   "events": [
@@ -722,6 +727,6 @@
       "updated": "2026-07-22T19:06:13.150Z"
     }
   ],
-  "nextPersonId": 7,
+  "nextPersonId": 8,
   "nextId": 22
 }
