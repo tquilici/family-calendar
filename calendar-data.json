@@ -930,11 +930,12 @@
       "date": "2027-03-26",
       "endDate": "2027-03-29",
       "allDay": true,
+      "repeat": "weekdays",
       "assignees": [
         4,
         7
       ],
-      "updated": "2026-08-17T12:20:47.230Z"
+      "updated": "2026-08-17T12:20:59.877Z"
     }
   ],
   "nextPersonId": 8,
