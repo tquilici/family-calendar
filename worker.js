@@ -1493,50 +1493,59 @@ document.addEventListener('click',function(e){
 });
 
 // ── SWIPE & DRAG NAVIGATION ───────────────────────────────────────────────────
-let touchStartX=0,touchStartY=0,isDragging=false;
+let touchStartX=0,touchStartY=0,isDragging=false,isHorizontal=false;
 const mainScroll=document.getElementById('mainScroll');
 if(mainScroll){
   mainScroll.addEventListener('touchstart',e=>{
+    if(e.touches.length!==1)return;
     touchStartX=e.touches[0].clientX;
     touchStartY=e.touches[0].clientY;
     isDragging=true;
+    isHorizontal=false;
   },false);
   mainScroll.addEventListener('touchmove',e=>{
-    if(!isDragging)return;
+    if(!isDragging||e.touches.length!==1)return;
     const dx=e.touches[0].clientX-touchStartX;
     const dy=e.touches[0].clientY-touchStartY;
-    if(Math.abs(dy)>Math.abs(dx))isDragging=false;
-  },false);
+    const isH=Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>10;
+    if(isH){
+      isHorizontal=true;
+      e.preventDefault();
+    }
+  },{passive:false});
   mainScroll.addEventListener('touchend',e=>{
-    if(!isDragging)return;
+    if(!isDragging||!isHorizontal)return;
     const dx=e.changedTouches[0].clientX-touchStartX;
-    const minSwipe=50;
+    const minSwipe=30;
     if(Math.abs(dx)>minSwipe){
       if(dx>0)navPrev();else navNext();
     }
     isDragging=false;
+    isHorizontal=false;
   },false);
   mainScroll.addEventListener('mousedown',e=>{
     touchStartX=e.clientX;
     touchStartY=e.clientY;
     isDragging=true;
+    isHorizontal=false;
   },false);
   mainScroll.addEventListener('mousemove',e=>{
     if(!isDragging)return;
     const dx=e.clientX-touchStartX;
     const dy=e.clientY-touchStartY;
-    if(Math.abs(dy)>Math.abs(dx))isDragging=false;
+    if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>10)isHorizontal=true;
   },false);
   mainScroll.addEventListener('mouseup',e=>{
-    if(!isDragging)return;
+    if(!isDragging||!isHorizontal)return;
     const dx=e.clientX-touchStartX;
-    const minDrag=50;
+    const minDrag=30;
     if(Math.abs(dx)>minDrag){
       if(dx>0)navPrev();else navNext();
     }
     isDragging=false;
+    isHorizontal=false;
   },false);
-  mainScroll.addEventListener('mouseleave',()=>{isDragging=false;},false);
+  mainScroll.addEventListener('mouseleave',()=>{isDragging=false;isHorizontal=false;},false);
 }
 
 // ── BOOT ──────────────────────────────────────────────────────────────────────
