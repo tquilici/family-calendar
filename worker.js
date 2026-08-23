@@ -1492,6 +1492,53 @@ document.addEventListener('click',function(e){
   });
 });
 
+// ── SWIPE & DRAG NAVIGATION ───────────────────────────────────────────────────
+let touchStartX=0,touchStartY=0,isDragging=false;
+const mainScroll=document.getElementById('mainScroll');
+if(mainScroll){
+  mainScroll.addEventListener('touchstart',e=>{
+    touchStartX=e.touches[0].clientX;
+    touchStartY=e.touches[0].clientY;
+    isDragging=true;
+  },false);
+  mainScroll.addEventListener('touchmove',e=>{
+    if(!isDragging)return;
+    const dx=e.touches[0].clientX-touchStartX;
+    const dy=e.touches[0].clientY-touchStartY;
+    if(Math.abs(dy)>Math.abs(dx))isDragging=false;
+  },false);
+  mainScroll.addEventListener('touchend',e=>{
+    if(!isDragging)return;
+    const dx=e.changedTouches[0].clientX-touchStartX;
+    const minSwipe=50;
+    if(Math.abs(dx)>minSwipe){
+      if(dx>0)navPrev();else navNext();
+    }
+    isDragging=false;
+  },false);
+  mainScroll.addEventListener('mousedown',e=>{
+    touchStartX=e.clientX;
+    touchStartY=e.clientY;
+    isDragging=true;
+  },false);
+  mainScroll.addEventListener('mousemove',e=>{
+    if(!isDragging)return;
+    const dx=e.clientX-touchStartX;
+    const dy=e.clientY-touchStartY;
+    if(Math.abs(dy)>Math.abs(dx))isDragging=false;
+  },false);
+  mainScroll.addEventListener('mouseup',e=>{
+    if(!isDragging)return;
+    const dx=e.clientX-touchStartX;
+    const minDrag=50;
+    if(Math.abs(dx)>minDrag){
+      if(dx>0)navPrev();else navNext();
+    }
+    isDragging=false;
+  },false);
+  mainScroll.addEventListener('mouseleave',()=>{isDragging=false;},false);
+}
+
 // ── BOOT ──────────────────────────────────────────────────────────────────────
 try {
   loadGithubConfig();
