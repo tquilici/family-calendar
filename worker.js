@@ -600,7 +600,6 @@ header {
     <button class="btn btn-ghost btn-icon" onclick="openGithubModal()" title="GitHub settings">⚙</button>
     <button class="btn btn-primary" onclick="openEventModal()">+ Event</button>
   </div>
-  <span id="versionBadge" style="font-size:9px;color:var(--text-muted);padding:2px 4px;margin-left:auto;" title="Deployed version"></span>
 </header>
 
 <!-- PERSON TABS -->
@@ -1517,13 +1516,9 @@ if(mainScroll){
 
 // ── BOOT ──────────────────────────────────────────────────────────────────────
 try {
-  const versionBadge = document.getElementById('versionBadge');
-  if (versionBadge) {
-    const now = new Date();
-    const timeStr = now.toLocaleString('en-US', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'});
-    versionBadge.textContent = timeStr;
-    console.log('Calendar version loaded at:', timeStr);
-  }
+  const now = new Date();
+  const timeStr = now.toLocaleString('en-US', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'});
+  console.log('%c✓ Calendar loaded', 'color: #10b981; font-size: 14px; font-weight: bold', timeStr);
   loadGithubConfig();
   loadFromStorage();
   loadTheme();
