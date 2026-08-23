@@ -1494,7 +1494,7 @@ document.addEventListener('click',function(e){
 });
 
 // ── SWIPE & DRAG NAVIGATION ───────────────────────────────────────────────────
-let swipeStartX=0,swipeStartY=0;
+let swipeStartX=0,swipeStartY=0,mouseDown=false;
 const mainScroll=document.getElementById('mainScroll');
 if(mainScroll){
   mainScroll.addEventListener('touchstart',e=>{
@@ -1510,6 +1510,20 @@ if(mainScroll){
       if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>40){
         if(dx>0)navPrev();else navNext();
       }
+    }
+  },{passive:true,capture:true});
+  mainScroll.addEventListener('mousedown',e=>{
+    swipeStartX=e.clientX;
+    swipeStartY=e.clientY;
+    mouseDown=true;
+  },{passive:true,capture:true});
+  mainScroll.addEventListener('mouseup',e=>{
+    if(!mouseDown)return;
+    mouseDown=false;
+    const dx=e.clientX-swipeStartX;
+    const dy=e.clientY-swipeStartY;
+    if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>40){
+      if(dx>0)navPrev();else navNext();
     }
   },{passive:true,capture:true});
 }
