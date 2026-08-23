@@ -1493,25 +1493,27 @@ document.addEventListener('click',function(e){
 });
 
 // ── SWIPE & DRAG NAVIGATION ───────────────────────────────────────────────────
-let swipeStartX=0,swipeStartY=0;
+let swipeStartX=0,swipeStartY=0,pointerDown=false;
 console.log('Swipe listeners attaching...');
-document.addEventListener('touchstart',e=>{
-  console.log('touchstart fired');
-  if(e.touches.length!==1)return;
-  swipeStartX=e.touches[0].clientX;
-  swipeStartY=e.touches[0].clientY;
-  console.log('Swipe start:',swipeStartX,swipeStartY);
+window.addEventListener('pointerdown',e=>{
+  console.log('pointerdown fired, isPrimary:',e.isPrimary);
+  if(!e.isPrimary)return;
+  swipeStartX=e.clientX;
+  swipeStartY=e.clientY;
+  pointerDown=true;
+  console.log('Pointer start:',swipeStartX,swipeStartY);
 },{passive:true});
-document.addEventListener('touchend',e=>{
-  console.log('touchend fired');
-  if(!e.changedTouches.length)return;
-  const endX=e.changedTouches[0].clientX;
-  const endY=e.changedTouches[0].clientY;
+window.addEventListener('pointerup',e=>{
+  console.log('pointerup fired');
+  if(!pointerDown)return;
+  pointerDown=false;
+  const endX=e.clientX;
+  const endY=e.clientY;
   const dx=endX-swipeStartX;
   const dy=endY-swipeStartY;
-  console.log('Swipe end:',endX,endY,'dx:',dx,'dy:',dy);
-  if(Math.abs(dx)<Math.abs(dy)){console.log('Vertical swipe, ignoring');return;}
-  if(Math.abs(dx)<40){console.log('Swipe too short');return;}
+  console.log('Pointer end:',endX,endY,'dx:',dx,'dy:',dy);
+  if(Math.abs(dx)<Math.abs(dy)){console.log('Vertical gesture, ignoring');return;}
+  if(Math.abs(dx)<40){console.log('Gesture too short');return;}
   console.log('Triggering navigation, dx:',dx);
   if(dx>0){console.log('Calling navPrev');navPrev();}else{console.log('Calling navNext');navNext();}
 },{passive:true});
