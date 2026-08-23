@@ -595,7 +595,7 @@ header {
     <button class="nav-btn" id="viewDay" onclick="setView('day')">Day</button>
   </div>
   <div class="header-actions">
-    <span id="versionBadge" style="font-size:10px;color:var(--text-muted);padding:2px 6px;border-radius:4px;background:var(--surface2);margin-right:4px;" title="Deployed version"></span>
+    <span id="versionBadge" style="font-size:11px;color:var(--accent);padding:4px 8px;border-radius:6px;background:var(--surface2);margin-right:6px;font-weight:600;border:1px solid var(--accent);" title="Deployed version">v-</span>
     <button class="btn btn-ghost btn-icon" id="themeBtn" onclick="toggleTheme()" title="Toggle theme">☀️</button>
     <button class="btn btn-ghost btn-icon" id="syncBtn" onclick="githubPush()" title="Sync to GitHub">⟳</button>
     <button class="btn btn-ghost btn-icon" onclick="openGithubModal()" title="GitHub settings">⚙</button>
