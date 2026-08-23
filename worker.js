@@ -1494,19 +1494,26 @@ document.addEventListener('click',function(e){
 
 // ── SWIPE & DRAG NAVIGATION ───────────────────────────────────────────────────
 let swipeStartX=0,swipeStartY=0;
+console.log('Swipe listeners attaching...');
 document.addEventListener('touchstart',e=>{
+  console.log('touchstart fired');
   if(e.touches.length!==1)return;
   swipeStartX=e.touches[0].clientX;
   swipeStartY=e.touches[0].clientY;
+  console.log('Swipe start:',swipeStartX,swipeStartY);
 },{passive:true});
 document.addEventListener('touchend',e=>{
+  console.log('touchend fired');
   if(!e.changedTouches.length)return;
   const endX=e.changedTouches[0].clientX;
   const endY=e.changedTouches[0].clientY;
   const dx=endX-swipeStartX;
   const dy=endY-swipeStartY;
-  if(Math.abs(dx)<Math.abs(dy)||Math.abs(dx)<40)return;
-  if(dx>0)navPrev();else navNext();
+  console.log('Swipe end:',endX,endY,'dx:',dx,'dy:',dy);
+  if(Math.abs(dx)<Math.abs(dy)){console.log('Vertical swipe, ignoring');return;}
+  if(Math.abs(dx)<40){console.log('Swipe too short');return;}
+  console.log('Triggering navigation, dx:',dx);
+  if(dx>0){console.log('Calling navPrev');navPrev();}else{console.log('Calling navNext');navNext();}
 },{passive:true});
 
 // ── BOOT ──────────────────────────────────────────────────────────────────────
