@@ -595,6 +595,7 @@ header {
     <button class="nav-btn" id="viewDay" onclick="setView('day')">Day</button>
   </div>
   <div class="header-actions">
+    <span id="versionBadge" style="font-size:10px;color:var(--text-muted);padding:2px 6px;border-radius:4px;background:var(--surface2);margin-right:4px;" title="Deployed version"></span>
     <button class="btn btn-ghost btn-icon" id="themeBtn" onclick="toggleTheme()" title="Toggle theme">☀️</button>
     <button class="btn btn-ghost btn-icon" id="syncBtn" onclick="githubPush()" title="Sync to GitHub">⟳</button>
     <button class="btn btn-ghost btn-icon" onclick="openGithubModal()" title="GitHub settings">⚙</button>
@@ -1516,6 +1517,13 @@ if(mainScroll){
 
 // ── BOOT ──────────────────────────────────────────────────────────────────────
 try {
+  const versionBadge = document.getElementById('versionBadge');
+  if (versionBadge) {
+    const now = new Date();
+    const timeStr = now.toLocaleString('en-US', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'});
+    versionBadge.textContent = timeStr;
+    console.log('Calendar version loaded at:', timeStr);
+  }
   loadGithubConfig();
   loadFromStorage();
   loadTheme();
