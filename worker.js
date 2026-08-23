@@ -1526,6 +1526,13 @@ if(mainScroll){
       if(dx>0)navPrev();else navNext();
     }
   },{passive:true,capture:true});
+  mainScroll.addEventListener('wheel',e=>{
+    if(e.deltaX===0)return;
+    if(Math.abs(e.deltaX)<Math.abs(e.deltaY))return;
+    if(Math.abs(e.deltaX)>40){
+      if(e.deltaX>0)navNext();else navPrev();
+    }
+  },{passive:true,capture:true});
 }
 
 // ── BOOT ──────────────────────────────────────────────────────────────────────
