@@ -242,6 +242,7 @@ header {
   overflow-y: auto;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
 }
 @media (min-width: 769px) {
   .main-scroll {
@@ -1493,30 +1494,25 @@ document.addEventListener('click',function(e){
 });
 
 // ── SWIPE & DRAG NAVIGATION ───────────────────────────────────────────────────
-let swipeStartX=0,swipeStartY=0,pointerDown=false;
-console.log('Swipe listeners attaching...');
-window.addEventListener('pointerdown',e=>{
-  console.log('pointerdown fired, isPrimary:',e.isPrimary);
-  if(!e.isPrimary)return;
-  swipeStartX=e.clientX;
-  swipeStartY=e.clientY;
-  pointerDown=true;
-  console.log('Pointer start:',swipeStartX,swipeStartY);
-},{passive:true});
-window.addEventListener('pointerup',e=>{
-  console.log('pointerup fired');
-  if(!pointerDown)return;
-  pointerDown=false;
-  const endX=e.clientX;
-  const endY=e.clientY;
-  const dx=endX-swipeStartX;
-  const dy=endY-swipeStartY;
-  console.log('Pointer end:',endX,endY,'dx:',dx,'dy:',dy);
-  if(Math.abs(dx)<Math.abs(dy)){console.log('Vertical gesture, ignoring');return;}
-  if(Math.abs(dx)<40){console.log('Gesture too short');return;}
-  console.log('Triggering navigation, dx:',dx);
-  if(dx>0){console.log('Calling navPrev');navPrev();}else{console.log('Calling navNext');navNext();}
-},{passive:true});
+let swipeStartX=0,swipeStartY=0;
+const mainScroll=document.getElementById('mainScroll');
+if(mainScroll){
+  mainScroll.addEventListener('touchstart',e=>{
+    if(e.touches.length===1){
+      swipeStartX=e.touches[0].clientX;
+      swipeStartY=e.touches[0].clientY;
+    }
+  },{passive:true,capture:true});
+  mainScroll.addEventListener('touchend',e=>{
+    if(e.changedTouches.length===1){
+      const dx=e.changedTouches[0].clientX-swipeStartX;
+      const dy=e.changedTouches[0].clientY-swipeStartY;
+      if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>40){
+        if(dx>0)navPrev();else navNext();
+      }
+    }
+  },{passive:true,capture:true});
+}
 
 // ── BOOT ──────────────────────────────────────────────────────────────────────
 try {
