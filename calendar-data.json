@@ -1315,8 +1315,21 @@
         1
       ],
       "updated": "2026-08-24T02:10:39.250Z"
+    },
+    {
+      "id": 71,
+      "created": "2026-08-24T23:44:42.998Z",
+      "title": "Nani Retreat - the pines",
+      "desc": "",
+      "date": "2026-10-19",
+      "endDate": "2026-10-21",
+      "allDay": true,
+      "assignees": [
+        4
+      ],
+      "updated": "2026-08-24T23:44:42.996Z"
     }
   ],
   "nextPersonId": 10,
-  "nextId": 71
+  "nextId": 72
 }
