@@ -1302,8 +1302,21 @@
         3
       ],
       "updated": "2026-08-24T02:09:09.170Z"
+    },
+    {
+      "id": 70,
+      "created": "2026-08-24T02:10:39.250Z",
+      "title": "Curriculum THS",
+      "desc": "HS—Monday, August 24, 6:30pm",
+      "date": "2026-08-24",
+      "allDay": true,
+      "assignees": [
+        4,
+        1
+      ],
+      "updated": "2026-08-24T02:10:39.250Z"
     }
   ],
   "nextPersonId": 10,
-  "nextId": 70
+  "nextId": 71
 }
