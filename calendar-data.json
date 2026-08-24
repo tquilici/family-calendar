@@ -1276,8 +1276,21 @@
       "allDay": true,
       "assignees": [],
       "updated": "2026-08-22T14:30:35.308Z"
+    },
+    {
+      "id": 68,
+      "created": "2026-08-24T02:07:57.773Z",
+      "title": "CHS9 Curriculum (6PM - 7:30PM)",
+      "desc": "Monday, August 31, from 6:00pm to 7:30pm is our annual CHS9 Curriculum Night.",
+      "date": "2026-08-23",
+      "allDay": true,
+      "assignees": [
+        5,
+        1
+      ],
+      "updated": "2026-08-24T02:07:57.773Z"
     }
   ],
   "nextPersonId": 10,
-  "nextId": 68
+  "nextId": 69
 }
