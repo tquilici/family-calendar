@@ -1289,8 +1289,21 @@
         1
       ],
       "updated": "2026-08-24T02:07:57.773Z"
+    },
+    {
+      "id": 69,
+      "created": "2026-08-24T02:08:58.416Z",
+      "title": "CHS Fall Curricular (5:30PM)",
+      "desc": "Fall Curriculum Night at CHS on Wednesday, Aug. 26th starting at 5:30pm",
+      "date": "2026-08-23",
+      "allDay": true,
+      "assignees": [
+        5,
+        3
+      ],
+      "updated": "2026-08-24T02:08:58.416Z"
     }
   ],
   "nextPersonId": 10,
-  "nextId": 69
+  "nextId": 70
 }
