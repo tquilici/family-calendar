@@ -47,7 +47,7 @@ const MANIFEST = JSON.stringify({
 });
 
 const SW = `
-const CACHE = 'family-calendar-v7';
+const CACHE = 'family-calendar-v11';
 self.addEventListener('install', e => { self.skipWaiting(); });
 self.addEventListener('activate', e => {
   e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));
@@ -107,6 +107,7 @@ const HTML = `<!DOCTYPE html>
   --today-bg: rgba(79,70,229,0.15);
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
   background: var(--bg);
@@ -240,34 +241,24 @@ header {
 .main-scroll {
   flex: 1;
   overflow-y: auto;
-  overflow-x: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  touch-action: pan-y;
+  width: 100%;
 }
-@media (min-width: 769px) {
-  .main-scroll {
-    overflow-x: hidden;
-  }
+#calendarView {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 /* ── MONTH VIEW ───────────────────────────────────────────── */
 .month-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   border-left: 1px solid var(--border);
   border-top: 1px solid var(--border);
-  min-width: 100%;
-}
-@media (max-width: 768px) {
-  .month-grid {
-    min-width: max-content;
-    grid-template-columns: repeat(7, 70px);
-  }
-}
-@media (max-width: 480px) {
-  .month-grid {
-    grid-template-columns: repeat(7, 60px);
-  }
+  width: 100%;
+  overflow: hidden;
 }
 .month-dow {
   background: var(--surface);
@@ -286,10 +277,14 @@ header {
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   min-height: 80px;
-  padding: 4px;
+  padding: 3px 2px;
   cursor: pointer;
   transition: background 0.1s;
   position: relative;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .month-day:hover { background: var(--surface2); }
 .month-day.other-month { background: var(--bg); }
@@ -308,13 +303,17 @@ header {
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 2px;
 }
-.day-events { display: flex; flex-direction: column; gap: 1px; }
+.day-events { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
 .day-event-pill {
   font-size: 10px; font-weight: 500;
-  padding: 1px 4px; border-radius: 3px;
+  padding: 1px 3px; border-radius: 3px;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   color: #fff; cursor: pointer;
+  display: block;
+  width: 100%;
   max-width: 100%;
+  min-width: 0;
+  line-height: 1.3;
 }
 .day-more {
   font-size: 10px; color: var(--text-muted); font-weight: 500;
@@ -572,11 +571,17 @@ header {
 @keyframes toastOut { from{opacity:1} to{opacity:0} }
 
 /* ── RESPONSIVE ─────────────────────────────────────────── */
-@media (max-width: 500px) {
-  .month-day { min-height: 56px; }
-  .week-event { font-size: 9px; }
+@media (max-width: 1024px) {
+  .month-day { min-height: 70px; padding: 3px 2px; }
   .month-dow { font-size: 10px; padding: 4px 2px; }
-  .day-event-pill { font-size: 9px; }
+  .day-num { font-size: 11px; }
+  .day-event-pill { font-size: 9px; padding: 1px 3px; }
+}
+@media (max-width: 500px) {
+  .month-day { min-height: 56px; padding: 2px; }
+  .week-event { font-size: 9px; }
+  .month-dow { font-size: 9px; padding: 3px 1px; }
+  .day-event-pill { font-size: 8px; }
 }
 
 /* ── SPINNING SYNC ───────────────────────────────────────── */
@@ -629,6 +634,7 @@ header {
 
 <!-- TOAST -->
 <div id="toastWrap"></div>
+
 
 <!-- ══════════════════════════ EVENT MODAL ══════════════════════════ -->
 <div class="modal-overlay hidden" id="eventModalOverlay">
