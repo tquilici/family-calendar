@@ -1340,8 +1340,20 @@
         2
       ],
       "updated": "2026-08-26T04:31:18.005Z"
+    },
+    {
+      "id": 73,
+      "created": "2026-08-26T04:31:41.188Z",
+      "title": "Trisha - Ignite Friday night",
+      "desc": "",
+      "date": "2026-08-28",
+      "allDay": true,
+      "assignees": [
+        2
+      ],
+      "updated": "2026-08-26T04:31:41.188Z"
     }
   ],
   "nextPersonId": 10,
-  "nextId": 73
+  "nextId": 74
 }
