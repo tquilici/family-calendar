@@ -1328,8 +1328,20 @@
         4
       ],
       "updated": "2026-08-24T23:44:42.996Z"
+    },
+    {
+      "id": 72,
+      "created": "2026-08-26T04:31:07.742Z",
+      "title": "Trisha - Ignite until 5PM",
+      "desc": "",
+      "date": "2026-08-25",
+      "allDay": true,
+      "assignees": [
+        2
+      ],
+      "updated": "2026-08-26T04:31:07.742Z"
     }
   ],
   "nextPersonId": 10,
-  "nextId": 72
+  "nextId": 73
 }
