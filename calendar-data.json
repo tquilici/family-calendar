@@ -1352,8 +1352,20 @@
         2
       ],
       "updated": "2026-08-27T04:30:00.650Z"
+    },
+    {
+      "id": 74,
+      "created": "2026-08-27T04:31:24.509Z",
+      "title": "Nico’s  Birthday dinner",
+      "desc": "",
+      "date": "2026-08-28",
+      "allDay": true,
+      "assignees": [
+        1
+      ],
+      "updated": "2026-08-27T04:31:24.509Z"
     }
   ],
   "nextPersonId": 10,
-  "nextId": 74
+  "nextId": 75
 }
