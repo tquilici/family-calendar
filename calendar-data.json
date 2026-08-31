@@ -1426,8 +1426,20 @@
         3
       ],
       "updated": "2026-08-31T11:55:25.713Z"
+    },
+    {
+      "id": 79,
+      "created": "2026-08-31T20:33:17.413Z",
+      "title": "DavidB Meeting",
+      "desc": "",
+      "date": "2026-09-18",
+      "allDay": true,
+      "assignees": [
+        1
+      ],
+      "updated": "2026-08-31T20:33:17.413Z"
     }
   ],
   "nextPersonId": 11,
-  "nextId": 79
+  "nextId": 80
 }
