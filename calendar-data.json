@@ -1159,15 +1159,15 @@
     {
       "id": 58,
       "created": "2026-08-17T14:07:34.437Z",
-      "title": "Dr Westover Appt (9:40AM)",
+      "title": "(Medical) Dr Westover Appt (9:40AM)",
       "desc": "",
       "date": "2026-11-13",
       "allDay": true,
       "assignees": [
-        1,
-        10
+        10,
+        1
       ],
-      "updated": "2026-08-31T00:52:01.092Z"
+      "updated": "2026-08-31T00:52:32.552Z"
     },
     {
       "id": 59,
