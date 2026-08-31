@@ -1401,8 +1401,11 @@
       "desc": "Dallas Cancer & Blood Disorders\n1935 Medical District Dr\nDallas TX 75235\n‪214-456-2382‬",
       "date": "2026-11-13",
       "allDay": true,
-      "assignees": [],
-      "updated": "2026-08-31T00:51:02.483Z"
+      "assignees": [
+        10,
+        4
+      ],
+      "updated": "2026-08-31T00:52:42.182Z"
     }
   ],
   "nextPersonId": 11,
