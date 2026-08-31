@@ -1372,8 +1372,10 @@
       "desc": "Rheumatology Clinic Frisco\n5700 Dallas Parkway\nFrisco TX 75034\n‪469-515-7250‬",
       "date": "2026-11-16",
       "allDay": true,
-      "assignees": [],
-      "updated": "2026-08-31T00:36:25.300Z"
+      "assignees": [
+        4
+      ],
+      "updated": "2026-08-31T00:36:40.376Z"
     }
   ],
   "nextPersonId": 10,
