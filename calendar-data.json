@@ -39,6 +39,11 @@
       "id": 8,
       "name": "Flights",
       "color": "#dc2626"
+    },
+    {
+      "id": 10,
+      "name": "Medical",
+      "color": "#db2777"
     }
   ],
   "events": [
@@ -1398,6 +1403,6 @@
       "updated": "2026-08-31T00:49:24.638Z"
     }
   ],
-  "nextPersonId": 10,
+  "nextPersonId": 11,
   "nextId": 78
 }
