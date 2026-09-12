@@ -1451,8 +1451,19 @@
         2
       ],
       "updated": "2026-09-12T23:20:41.387Z"
+    },
+    {
+      "id": 81,
+      "created": "2026-09-12T23:21:45.599Z",
+      "title": "Trisha school",
+      "desc": "",
+      "date": "2026-09-14",
+      "allDay": true,
+      "repeat": "weekly",
+      "assignees": [],
+      "updated": "2026-09-12T23:21:45.599Z"
     }
   ],
   "nextPersonId": 11,
-  "nextId": 81
+  "nextId": 82
 }
