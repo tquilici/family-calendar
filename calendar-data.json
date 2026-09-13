@@ -1547,8 +1547,18 @@
         2
       ],
       "updated": "2026-09-13T20:33:10.414Z"
+    },
+    {
+      "id": 89,
+      "created": "2026-09-13T20:33:48.843Z",
+      "title": "Prophetic Minstristry",
+      "desc": "",
+      "date": "2027-01-18",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-09-13T20:33:48.843Z"
     }
   ],
   "nextPersonId": 11,
-  "nextId": 89
+  "nextId": 90
 }
