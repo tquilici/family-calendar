@@ -1571,8 +1571,20 @@
         2
       ],
       "updated": "2026-09-13T20:35:28.442Z"
+    },
+    {
+      "id": 91,
+      "created": "2026-09-13T20:36:09.018Z",
+      "title": "Trisha - Encounter",
+      "desc": "",
+      "date": "2026-09-14",
+      "endDate": "2027-05-24",
+      "allDay": true,
+      "repeat": "weekly",
+      "assignees": [],
+      "updated": "2026-09-13T20:36:09.018Z"
     }
   ],
   "nextPersonId": 11,
-  "nextId": 91
+  "nextId": 92
 }
