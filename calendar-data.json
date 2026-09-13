@@ -1486,8 +1486,18 @@
         2
       ],
       "updated": "2026-09-13T20:28:06.628Z"
+    },
+    {
+      "id": 84,
+      "created": "2026-09-13T20:28:45.457Z",
+      "title": "Alumni Gathering",
+      "desc": "",
+      "date": "2026-10-16",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-09-13T20:28:45.457Z"
     }
   ],
   "nextPersonId": 11,
-  "nextId": 84
+  "nextId": 85
 }
