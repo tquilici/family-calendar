@@ -1482,8 +1482,10 @@
       "desc": "",
       "date": "2026-11-14",
       "allDay": true,
-      "assignees": [],
-      "updated": "2026-09-13T20:27:57.650Z"
+      "assignees": [
+        2
+      ],
+      "updated": "2026-09-13T20:28:06.628Z"
     }
   ],
   "nextPersonId": 11,
