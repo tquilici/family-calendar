@@ -1462,8 +1462,20 @@
       "repeat": "weekly",
       "assignees": [],
       "updated": "2026-09-12T23:21:45.599Z"
+    },
+    {
+      "id": 82,
+      "created": "2026-09-13T20:25:48.730Z",
+      "title": "Trisha Leadership Meeting -9 PM.",
+      "desc": "",
+      "date": "2026-10-11",
+      "allDay": true,
+      "assignees": [
+        2
+      ],
+      "updated": "2026-09-13T20:25:48.730Z"
     }
   ],
   "nextPersonId": 11,
-  "nextId": 82
+  "nextId": 83
 }
