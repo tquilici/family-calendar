@@ -1498,8 +1498,18 @@
         2
       ],
       "updated": "2026-09-13T20:29:07.448Z"
+    },
+    {
+      "id": 85,
+      "created": "2026-09-13T20:29:45.173Z",
+      "title": "Leadership Meeting (6-9PM)",
+      "desc": "",
+      "date": "2026-11-08",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-09-13T20:29:45.172Z"
     }
   ],
   "nextPersonId": 11,
-  "nextId": 85
+  "nextId": 86
 }
