@@ -1534,8 +1534,21 @@
         2
       ],
       "updated": "2026-09-13T20:32:29.557Z"
+    },
+    {
+      "id": 88,
+      "created": "2026-09-13T20:33:10.414Z",
+      "title": "Ignite Jan 15th - Jan 16th",
+      "desc": "",
+      "date": "2027-01-15",
+      "endDate": "2027-01-16",
+      "allDay": true,
+      "assignees": [
+        2
+      ],
+      "updated": "2026-09-13T20:33:10.414Z"
     }
   ],
   "nextPersonId": 11,
-  "nextId": 88
+  "nextId": 89
 }
