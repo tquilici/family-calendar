@@ -1559,8 +1559,18 @@
         2
       ],
       "updated": "2026-09-13T20:34:10.509Z"
+    },
+    {
+      "id": 90,
+      "created": "2026-09-13T20:35:23.060Z",
+      "title": "Trisha Y1/Y2 (830AM-11:30AM)",
+      "desc": "",
+      "date": "2027-01-23",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-09-13T20:35:23.060Z"
     }
   ],
   "nextPersonId": 11,
-  "nextId": 90
+  "nextId": 91
 }
