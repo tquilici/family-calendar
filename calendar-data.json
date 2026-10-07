@@ -1212,19 +1212,6 @@
       "updated": "2026-08-17T14:17:49.215Z"
     },
     {
-      "id": 62,
-      "created": "2026-08-17T14:18:52.875Z",
-      "title": "DAL->SJC (6:40PM)",
-      "desc": "",
-      "date": "2026-10-07",
-      "allDay": true,
-      "assignees": [
-        8,
-        1
-      ],
-      "updated": "2026-08-17T14:31:38.181Z"
-    },
-    {
       "id": 63,
       "created": "2026-08-17T14:20:24.390Z",
       "title": "San Jose -> Dallas (3:45)",
