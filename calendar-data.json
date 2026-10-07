@@ -1610,8 +1610,20 @@
         2
       ],
       "updated": "2026-10-07T02:36:16.675Z"
+    },
+    {
+      "id": 96,
+      "created": "2026-10-07T02:53:22.673Z",
+      "title": "SJC-DFW (6AM)",
+      "desc": "",
+      "date": "2026-10-06",
+      "allDay": true,
+      "assignees": [
+        1
+      ],
+      "updated": "2026-10-07T02:53:22.673Z"
     }
   ],
   "nextPersonId": 11,
-  "nextId": 96
+  "nextId": 97
 }
