@@ -1658,8 +1658,18 @@
         1
       ],
       "updated": "2026-10-17T11:41:40.123Z"
+    },
+    {
+      "id": 100,
+      "created": "2026-11-04T15:23:09.333Z",
+      "title": "Feb 20 - Trisha Leadership Team",
+      "desc": "",
+      "date": "2027-02-20",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-11-04T15:23:09.333Z"
     }
   ],
   "nextPersonId": 11,
-  "nextId": 100
+  "nextId": 101
 }
