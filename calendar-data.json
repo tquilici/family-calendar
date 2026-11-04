@@ -1668,8 +1668,20 @@
       "allDay": true,
       "assignees": [],
       "updated": "2026-11-04T15:23:09.333Z"
+    },
+    {
+      "id": 101,
+      "created": "2026-11-04T15:23:44.445Z",
+      "title": "Trisha Leadership Meeting",
+      "desc": "",
+      "date": "2027-02-27",
+      "allDay": true,
+      "assignees": [
+        2
+      ],
+      "updated": "2026-11-04T15:23:44.445Z"
     }
   ],
   "nextPersonId": 11,
-  "nextId": 101
+  "nextId": 102
 }
