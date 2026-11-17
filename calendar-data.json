@@ -1700,8 +1700,21 @@
       "allDay": true,
       "assignees": [],
       "updated": "2026-11-04T15:25:01.486Z"
+    },
+    {
+      "id": 104,
+      "created": "2026-11-17T04:47:40.492Z",
+      "title": "Trisha  talk at retreat : all day",
+      "desc": "",
+      "date": "2026-11-16",
+      "endDate": "2027-02-13",
+      "allDay": true,
+      "assignees": [
+        2
+      ],
+      "updated": "2026-11-17T04:47:40.492Z"
     }
   ],
   "nextPersonId": 11,
-  "nextId": 104
+  "nextId": 105
 }
