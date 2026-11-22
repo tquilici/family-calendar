@@ -1719,16 +1719,17 @@
       "created": "2026-11-22T20:28:32.004Z",
       "title": "Colorodo",
       "desc": "",
-      "date": "2026-11-22",
+      "date": "2026-12-27",
       "endDate": "2027-01-01",
       "allDay": true,
       "assignees": [
         1,
         2,
         3,
-        4
+        4,
+        5
       ],
-      "updated": "2026-11-22T20:28:32.004Z"
+      "updated": "2026-11-22T20:29:02.957Z"
     }
   ],
   "nextPersonId": 11,
