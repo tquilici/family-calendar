@@ -1730,8 +1730,18 @@
         5
       ],
       "updated": "2026-11-22T20:29:02.957Z"
+    },
+    {
+      "id": 106,
+      "created": "2026-11-24T15:12:49.846Z",
+      "title": "Trisha - Rachael's Cousin's party",
+      "desc": "",
+      "date": "2026-12-19",
+      "allDay": true,
+      "assignees": [],
+      "updated": "2026-11-24T15:12:49.846Z"
     }
   ],
   "nextPersonId": 11,
-  "nextId": 106
+  "nextId": 107
 }
